@@ -900,7 +900,9 @@ a.sidebar__current-theme {
 }
 
 .info-link {
-  color: white;
+  /* color: white; */
+  color: #1d1f1a;
+  text-decoration: underline;
 }
 
 button.course-accordion {
