@@ -5,982 +5,1143 @@
   <meta charset="UTF-8" />
   <meta name="author" content="Gravity" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gravity</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Gravity — Product Page</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="../styles/style.css" />
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <div class="header-wrapper">
-    <header class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="https://www.themeshopy.com/" target="_blank"><img src="../images/themeshopy.png" alt="logo" /></a>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div id="progress"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M1 4h14M1 8h14M1 12h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+      <img src="../images/themeshopy.png" alt="Themeshopy" />
+      <span class="brand-name">Gravity</span>
+      <span class="brand-tag">Docs</span>
+    </div>
+    <nav class="top-links" aria-label="Main navigation">
+      <a href="../../home.html">Home</a>
+      <a href="https://help.shopify.com/en" target="_blank" rel="noopener">Shopify Guide</a>
+      <a href="https://www.themeshopy.com/pages/contact" target="_blank" rel="noopener">Support</a>
+      <a class="btn-demo" href="https://opulencedevelopment.myshopify.com/?pb=0" target="_blank" rel="noopener">View
+        Demo</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.3" />
+          <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+        </svg>
+        <input type="text" id="navSearch" placeholder="Search documentation" aria-label="Search documentation" />
+        <kbd>/</kbd>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Get Started</span>
         </div>
-        <div class="nav">
-          <ul class="user-nav-list">
-            <li><a href="../../home.html">Home</a></li>
+        <ul class="nav-links">
+          <li><a href="installationguide.html">Installation guide</a></li>
+          <li><a href="update.html">How to update Gravity</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Header</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="header.html">Header section</a></li>
+          <li><a href="anouncement.html">Announcement bar</a></li>
+          <li><a href="dropdown.html">Dropdown menu</a></li>
+          <li><a href="megamenu.html">Mega menu</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Footer</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="footer.html">Footer section</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Sections</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="heroslideshow.html">Hero slideshow</a></li>
+          <li><a href="scrolllist.html">Scroll list</a></li>
+          <li><a href="collectionlist.html">Collection list</a></li>
+          <li><a href="featuredcollection.html">Featured collection</a></li>
+          <li>
+            <a href="collectionlistslider.html">Collection list slider</a>
+          </li>
+          <li><a href="featuredproduct.html">Featured product</a></li>
+          <li><a href="imagehotspot.html">Image hotspots</a></li>
+          <li><a href="imagebanner.html">Image banner</a></li>
+          <li><a href="twocolumn.html">Sticky image with text</a></li>
+          <li><a href="countdowntimer.html">Countdown timer</a></li>
+          <li><a href="infowithimage.html">Info with image</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="multicolumnimages.html">Multicolumn images</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="imagegallery.html">Image gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group active">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Templates</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="productpage.html" class="current">Product</a></li>
+          <li><a href="collectionpage.html">Collection</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-cat">
+          <span class="node"></span><span>Theme Settings</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="generalsetting.html">General settings</a></li>
+          <li><a href="product-swatches.html">Product swatches</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <div class="hero" id="overview">
+        <svg class="hero-plumb" width="46" height="120" viewBox="0 0 46 120" fill="none" aria-hidden="true">
+          <line x1="23" y1="0" x2="23" y2="86" stroke="#DFDACC" stroke-width="1" />
+          <circle cx="23" cy="98" r="12" stroke="#37503F" stroke-width="1.4" fill="#E4EBE3" />
+          <circle cx="23" cy="98" r="3" fill="#37503F" />
+        </svg>
+        <p class="eyebrow">Theme documentation · v3.2</p>
+        <h1>Product Page</h1>
+        <p class="lede">
+          The <b>Product Page</b> is one of the most important pages in your
+          Shopify store, as it presents a single product along with all the
+          essential information customers need before making a purchase. In
+          the Gravity theme, the product page is designed to highlight your
+          product with a clean layout, high-quality media, and well-structured
+          details that help customers easily understand the product and make
+          confident buying decisions.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#product-info">Configure product page</a>
+          <a class="btn btn-ghost" href="https://themes.shopify.com/themes/gravity/presets/gravity" target="_blank"
+            rel="noopener">Try the theme</a>
+        </div>
+      </div>
+      <p class="lede">
+        This page includes a product media gallery, product title, vendor
+        name, pricing details, SKU, and a detailed product description.
+        Customers can also select product variants such as size or color,
+        check inventory availability, adjust the quantity, and add the item to
+        their cart directly from this page. Additional blocks such as pickup
+        availability, trust badges, complementary products, collapsible
+        information tabs, and social share buttons can be enabled to enhance
+        the shopping experience and provide more useful information to your
+        customers.
+      </p>
+
+      <section id="product-info">
+        <div class="section-head">
+          <h2>Product page setup</h2>
+        </div>
+
+        <div class="article-block">
+          <h3>How to configure the product page</h3>
+          <div class="info-note">
+            <div class="step-title">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Steps
+            </div>
+            <ul>
+              <li class="info-block__content">
+                From your Shopify admin, go to <b>Online Store → Themes</b>.
+              </li>
+              <li class="info-block__content">
+                Click <b>Customize</b> on the <b>Gravity</b> theme.
+              </li>
+              <li class="info-block__content">
+                In the Theme Editor, use the page selector dropdown and
+                <strong>choose Products</strong> →
+                <strong>Default product</strong>.
+              </li>
+              <li class="info-block__content">
+                From the left sidebar, select the <b>Product</b> section to
+                access the product page settings.
+              </li>
+              <li class="info-block__content">
+                Add, remove, or rearrange <b>product blocks</b> such as Title,
+                Price, Variant Picker, Inventory, and Add to Cart according to
+                your store’s needs.
+              </li>
+              <li class="info-block__content">
+                Adjust the <b>section settings</b> and layout options
+                available on the right panel.
+              </li>
+              <li class="info-block__content">
+                Click <b>Save</b> to apply your changes.
+              </li>
+            </ul>
+          </div>
+          <h3 style="margin-top: 2rem">Product</h3>
+          <p class="lede">
+            The <b>Product Information</b> contains all the essential blocks
+            that display details about a product. These blocks help customers
+            understand the product, view important details, select variants,
+            and complete their purchase easily.
+          </p>
+          <h3 style="margin-top: 2rem">
+            How to configure Product Information
+          </h3>
+          <ul>
             <li>
-              <a href="https://help.shopify.com/en" target="_blank">Shopify Guide</a>
+              <strong>Color Scheme:</strong> Choose from predefined color
+              schemes (e.g., Scheme 1) to control background, text, and accent
+              colors.
             </li>
             <li>
-              <a href="https://www.themeshopy.com/pages/contact" target="_blank">Support</a>
+              <strong>Media Width:</strong> Select the size of the product
+              media gallery:
+              <ul>
+                <li>
+                  <strong>Small:</strong> Compact display for minimalist
+                  layouts.
+                </li>
+                <li>
+                  <strong>Medium:</strong> Balanced size for clear visuals.
+                </li>
+                <li>
+                  <strong>Large:</strong> Large display for high-impact
+                  imagery.
+                </li>
+              </ul>
             </li>
-            <!-- <li>
-              <a href="https://opulencedevelopment.myshopify.com" target="_blank" class="viewdemo-btn">View demo</a>
-            </li> -->
+            <li>
+              <strong>Media Aspect Ratio:</strong> Set the shape of product
+              images, e.g., <em>Portrait</em> for vertical orientation.
+            </li>
+            <li>
+              <strong>Show Thumbnails on Mobile:</strong> Display smaller
+              preview images below the main gallery on mobile devices.
+            </li>
+            <li>
+              <strong>Show Arrows on Mobile:</strong> Display navigation
+              arrows on the media gallery for easier browsing on mobile.
+            </li>
           </ul>
+          <img src="../images/product-page-information.png" alt="product-page-preview" class="wide-image" />
         </div>
-        <div class="menu"><i class="fa-solid fa-bars"></i></div>
-      </div>
-    </header>
-  </div>
-  <section class="container">
-    <!-- <div class="menu"><i class="fa-solid fa-bars"></i></div> -->
-    <div class="page-wrapper">
-      <div class="sidenavbar">
-        <span class="menu-close">
-          <i class="fa-solid fa-x"></i>
-        </span>
-        <a href="https://themes.shopify.com/designers/themeshopy-private-limited" target="_blank"
-          class="sidebar__header">
-          <span class="small-text">Themes</span>
-        </a>
-        <div class="side-bar-content">
-          <a href="../index.html" class="sidebar__current-theme">Gravity</a>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Get Started</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/installationguide.html">Installation Guide</a>
-              <a href="../pages/update.html">How To Update Gravity</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Header</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/header.html">Header section</a>
-              <a href="../pages/anouncement.html">Announcement Bar</a>
-              <a href="../pages/dropdown.html">Dropdown menu</a>
-              <a href="../pages/megamenu.html">Mega menu</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Footer</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/footer.html">Footer section</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Sections</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/heroslideshow.html">Hero Slideshow</a>
-              <a href="../pages/scrolllist.html">Scroll list</a>
-              <a href="../pages/collectionlist.html">Collection list</a>
-              <a href="../pages/featuredcollection.html">Featured Collection</a>
-              <a href="../pages/collectionlistslider.html">Collection List Slider</a>
-              <a href="../pages/featuredproduct.html">Featured product</a>
-              <a href="../pages/imagehotspot.html">Image Hotspots</a>
-              <a href="../pages/imagebanner.html">Image Banner</a>
-              <a href="../pages/twocolumn.html">Sticky Image With Text</a>
-              <a href="../pages/countdowntimer.html">Countdown Timer</a>
-              <a href="../pages/infowithimage.html">Info with image</a>
-              <a href="../pages/testimonials.html">Testimonials</a>
-              <a href="../pages/multicolumnimages.html">Multicolumn Images</a>
-              <a href="../pages/newsletter.html">Newsletter</a>
-              <a href="../pages/imagegallery.html">Image Gallery</a>
+      </section>
 
-            </div>
-          </div>
+      <section id="product-blocks">
+        <div class="section-head">
+          <p class="eyebrow">Blocks</p>
+          <h2>Available product blocks</h2>
         </div>
-        <div class="accordion">
-          <button class="course-accordion">Templates</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/productpage.html">Product</a>
-              <a href="../pages/collectionpage.html">Collection</a>
-              <a href="../pages/cart.html">Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Theme Settings</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/generalsetting.html">General Settings</a>
-              <a href="../pages/product-swatches.html">Product Swatches</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="main-content">
-        <div class="main-content__wrapper">
-          <div class="main-content-text-wrapper">
-            <div class="about-main" id="about">
-              <h2 class="heading-section">Product Page</h2>
+        <div class="article-block">
+          <ul style="margin-top: 0">
+            <li>
+              <strong>Vendor:</strong> Displays the name of the product’s
+              brand or supplier on the product page, helping customers easily
+              identify the brand associated with the product.
+
+              <ul>
+                <li>
+                  <strong>Text Transform:</strong> Controls how the vendor
+                  name appears.
+                  <ul>
+                    <li>
+                      <strong>Default:</strong> Shows the vendor name in its
+                      original format.
+                    </li>
+                    <li>
+                      <strong>Uppercase:</strong> Displays the vendor name in
+                      uppercase letters.
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <strong>Color:</strong> Select the color style for the
+                  vendor text.
+                  <ul>
+                    <li>
+                      <strong>Body:</strong> Uses the default theme text
+                      color.
+                    </li>
+                    <li>
+                      <strong>Highlight:</strong> Applies the highlight color
+                      to make the vendor name stand out.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Title:</strong> Displays the name of the product
+              prominently on the product page, helping customers quickly
+              identify the product they are viewing.
+
+              <ul>
+                <li>
+                  <strong>Heading font weight:</strong> Controls the thickness
+                  of the product title text, allowing you to adjust how bold
+                  or prominent the title appears.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Price:</strong> Displays the product’s pricing
+              information on the product page, including the current price,
+              compare-at price, and any discounts. This helps customers
+              quickly see the product’s cost and any savings available.
+            </li>
+            <li>
+              <strong>SKU:</strong> Displays the product’s Stock Keeping Unit
+              (SKU) on the product page. This unique identifier helps both
+              store owners and customers track and reference specific products
+              efficiently.
+            </li>
+            <li>
+              <strong>Description:</strong> Shows the product’s detailed
+              description on the product page, helping customers understand
+              the product features, benefits, and usage.
+
+              <ul>
+                <li>
+                  <strong>Number of Lines to Show by Default:</strong>
+                  Controls how many lines of the product description are
+                  visible initially. Customers can expand to see the full
+                  description if it exceeds the set limit.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Separator:</strong> Adds a visual divider between blocks
+              on the product page. This helps organize content and improve
+              readability by clearly separating different elements.
+            </li>
+            <li>
+              <strong>Variant Picker:</strong> Allows customers to choose
+              between different product options such as size, color, or
+              material.
+
+              <ul>
+                <li>
+                  <strong>Options Type:</strong> Select how product variants
+                  are displayed:
+                  <ul>
+                    <li>
+                      <strong>Button:</strong> Shows variants as clickable
+                      buttons, ideal for quick selection and visual clarity.
+                    </li>
+                    <li>
+                      <strong>Dropdown:</strong> Displays variants in a
+                      compact dropdown list, suitable for products with many
+                      options.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Swatch Shape:</strong> You can change the shape of
+                  color swatches by going to
+                  <b>Theme Settings → Swatches → Swatch Shape</b>. This allows
+                  you to choose between round, square, or use default one.
+                </li>
+                <li>
+                  For more detil about swatches click on
+                  <a href="./product-swatches.html" class="info-link" target="_blank"><b>More</b></a>
+                </li>
+                <li>
+                  For more details about swatches, refer to Shopify’s
+                  <a href="https://help.shopify.com/en/manual/products/product-variants/using-color-swatches"
+                    class="info-link" target="_blank"><b>Option with swatches documentation</b> </a>.
+                </li>
+                <li>
+                  You can also refer to
+                  <b><a
+                      href="https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields"
+                      target="_blank" class="info-link">Adding color swatches using category metafields</a></b>
+                  for advanced customization.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Inventory:</strong> Displays the product’s stock status
+              on the product page. It shows messages like <em>In Stock</em>,
+              <em>Out of Stock</em>, or <em>Only 10 left</em>, helping
+              customers know product availability at a glance.
+            </li>
+            <li>
+              <strong>Pickup Availability:</strong>Displays whether a product
+              is available for local or in-store pickup, allowing customers to
+              select their preferred fulfillment method easily.
+            </li>
+            <li>
+              <strong>Quantity Selector:</strong> Allows customers to choose
+              the number of items they want to purchase directly on the
+              product page, making it easy to adjust quantities before adding
+              products to the cart.
+            </li>
+
+            <div class="theme-colors" style="margin-top: 2rem">
+              <h3>Back in Stock</h3>
               <p>
-                The <b>Product Page</b> is one of the most important pages in your Shopify store, as it presents a
-                single product along with all the essential information customers need before making a purchase. In the
-                Gravity theme, the product page is designed to highlight your product with a clean layout, high-quality
-                media, and well-structured details that help customers easily understand the product and make confident
-                buying decisions.
-              </p>
-
-              <p>
-                This page includes a product media gallery, product title, vendor name, pricing details, SKU, and a
-                detailed product description. Customers can also select product variants such as size or color, check
-                inventory availability, adjust the quantity, and add the item to their cart directly from this page.
-                Additional blocks such as pickup availability, trust badges, complementary products, collapsible
-                information tabs, and social share buttons can be enabled to enhance the shopping experience and provide
-                more useful information to your customers.
-              </p>
-              <h3>How to Configure the Product Page</h3>
-              <div class="info-block info-block--type-tip">
-                <div class="info-block__title">
-                  <p class="step">
-                    <i class="fa-solid fa-circle-check"></i> Steps
-                  </p>
-                </div>
-
-                <ul>
-                  <li class="info-block__content">
-                    From your Shopify admin, go to <b>Online Store → Themes</b>.
-                  </li>
-                  <li class="info-block__content">
-                    Click <b>Customize</b> on the <b>Gravity</b> theme.
-                  </li>
-                  <li class="info-block__content">
-                    In the Theme Editor, use the page selector dropdown and <strong>choose Products</strong> →
-                    <strong>Default product</strong>.
-                  </li>
-                  <li class="info-block__content">
-                    From the left sidebar, select the <b>Product</b> section to access the product page settings.
-                  </li>
-                  <li class="info-block__content">
-                    Add, remove, or rearrange <b>product blocks</b> such as Title, Price, Variant Picker, Inventory, and
-                    Add to Cart according to your store’s needs.
-                  </li>
-                  <li class="info-block__content">
-                    Adjust the <b>section settings</b> and layout options available on the right panel.
-                  </li>
-                  <li class="info-block__content">
-                    Click <b>Save</b> to apply your changes.
-                  </li>
-                </ul>
-              </div>
-              <h3>Product</h3>
-              <p>
-                The <b>Product Information</b> contains all the essential blocks that display details about a
-                product.
-                These blocks help customers understand the product, view important details, select variants, and
-                complete
-                their purchase easily.
+                The Back in Stock settings allow customers to subscribe for notifications
+                when an out-of-stock product becomes available again. When enabled, a
+                notification form is automatically displayed only for products or variants
+                that are currently unavailable, helping you recover missed sales and keep
+                interested customers informed.
               </p>
               <br />
-              <h3>How to configure Product Information</h3>
-              <ul class="article-list list-unstyled">
-                <li>
-                  <strong>Color Scheme:</strong> Choose from predefined color schemes (e.g., Scheme 1) to control
-                  background, text, and accent colors.
-                </li>
-                <li>
-                  <strong>Media Width:</strong> Select the size of the product media gallery:
-                  <ul>
-                    <li><strong>Small:</strong> Compact display for minimalist layouts.</li>
-                    <li><strong>Medium:</strong> Balanced size for clear visuals.</li>
-                    <li><strong>Large:</strong> Large display for high-impact imagery.</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Media Aspect Ratio:</strong> Set the shape of product images, e.g., <em>Portrait</em> for
-                  vertical orientation.
-                </li>
-                <li>
-                  <strong>Show Thumbnails on Mobile:</strong> Display smaller preview images below the main gallery on
-                  mobile devices.
-                </li>
-                <li>
-                  <strong>Show Arrows on Mobile:</strong> Display navigation arrows on the media gallery for easier
-                  browsing on mobile.
-                </li>
-              </ul>
-              <img src="../images/product-page-information.png" alt="footer.png" class="wide-image" />
-              <h3>Available Product Block</h3>
-              <ul class="article-list list-unstyled">
-
-                <li>
-                  <strong>Vendor:</strong> Displays the name of the product’s brand or supplier on the product page,
-                  helping customers easily identify the brand associated with the product.
-
-                  <ul>
-                    <li>
-                      <strong>Text Transform:</strong> Controls how the vendor name appears.
-                      <ul>
-                        <li><strong>Default:</strong> Shows the vendor name in its original format.</li>
-                        <li><strong>Uppercase:</strong> Displays the vendor name in uppercase letters.</li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      <strong>Color:</strong> Select the color style for the vendor text.
-                      <ul>
-                        <li><strong>Body:</strong> Uses the default theme text color.</li>
-                        <li><strong>Highlight:</strong> Applies the highlight color to make the vendor name stand out.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-
-                </li>
-                <li>
-                  <strong>Title:</strong> Displays the name of the product prominently on the product page, helping
-                  customers quickly identify the product they are viewing.
-
-                  <ul>
-                    <li>
-                      <strong>Heading font weight:</strong> Controls the thickness of the product title text, allowing
-                      you to adjust how bold or prominent the title appears.
-                    </li>
-                  </ul>
-
-                </li>
-                <li>
-                  <strong>Price:</strong> Displays the product’s pricing information on the product page, including the
-                  current price, compare-at price, and any discounts. This helps customers quickly see the product’s
-                  cost and any savings available.
-                </li>
-                <li>
-                  <strong>SKU:</strong> Displays the product’s Stock Keeping Unit (SKU) on the product page. This unique
-                  identifier helps both store owners and customers track and reference specific products efficiently.
-                </li>
-                <li>
-                  <strong>Description:</strong> Shows the product’s detailed description on the product page, helping
-                  customers understand the product features, benefits, and usage.
-
-                  <ul>
-                    <li>
-                      <strong>Number of Lines to Show by Default:</strong> Controls how many lines of the product
-                      description are visible initially. Customers can expand to see the full description if it exceeds
-                      the set limit.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Separator:</strong> Adds a visual divider between blocks on the product page. This helps
-                  organize content and improve readability by clearly separating different elements.
-                </li>
-                <li>
-                  <strong>Variant Picker:</strong> Allows customers to choose between different product options such as
-                  size, color, or material.
-
-                  <ul>
-                    <li>
-                      <strong>Options Type:</strong> Select how product variants are displayed:
-                      <ul>
-                        <li><strong>Button:</strong> Shows variants as clickable buttons, ideal for quick selection and
-                          visual clarity.</li>
-                        <li><strong>Dropdown:</strong> Displays variants in a compact dropdown list, suitable for
-                          products with many options.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Swatch Shape:</strong> You can change the shape of color swatches by going to <b>Theme
-                        Settings → Swatches → Swatch Shape</b>. This allows you to choose between round, square, or
-                      use default one.
-                    </li>
-                    <li>For more detil about swatches click on <a href="./product-swatches.html" class="info-link"
-                        target="_blank"><b>More</b></a></li>
-                    <li>
-                      For more details about swatches, refer to Shopify’s <a
-                        href="https://help.shopify.com/en/manual/products/product-variants/using-color-swatches"
-                        class="info-link" target="_blank"><b>Option with swatches documentation</b> </a>.
-                    </li>
-                    <li>
-                      You can also refer to <b><a
-                          href="https://help.shopify.com/en/manual/custom-data/metafields/category-metafields/using-category-metafields"
-                          target="_blank" class="info-link">Adding color swatches using category metafields</a></b> for
-                      advanced
-                      customization.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Inventory:</strong> Displays the product’s stock status on the product page. It shows messages
-                  like <em>In Stock</em>, <em>Out of Stock</em>, or <em>Only 10 left</em>, helping customers know
-                  product availability at a glance.
-                </li>
-                <li>
-                  <strong>Pickup Availability:</strong>Displays whether a product is available for
-                  local or in-store pickup, allowing customers to select their preferred fulfillment method easily.
-                </li>
-                <li>
-                  <strong>Quantity Selector:</strong> Allows customers to choose the number of items they want to
-                  purchase directly on the product page, making it easy to adjust quantities before adding products to
-                  the cart.
-                </li>
-
-                <div class="theme-colors">
-                  <h3>Back in Stock</h3>
-
-                  <p>
-                    The Back in Stock settings allow customers to subscribe for notifications
-                    when an out-of-stock product becomes available again. When enabled, a
-                    notification form is automatically displayed only for products or variants
-                    that are currently unavailable, helping you recover missed sales and keep
-                    interested customers informed.
-                  </p>
-
-                  <h4>Back in Stock Settings</h4>
-
-                  <p>
-                    These options let you configure the Back in Stock notification feature and
-                    customize how it appears on the product page.
-                  </p>
-
-                  <ul>
-                    <li>
-                      <b>Show Dynamic Checkout Button</b> – Displays an accelerated checkout
-                      button, such as <b>Buy it now</b>, allowing customers to purchase products
-                      directly using supported payment methods.
-                    </li>
-
-                    <li>
-                      <b>Show Gift Recipient Form</b> – Allows customers to send the product as
-                      a gift by entering the recipient's details during checkout.
-                    </li>
-
-                    <li>
-                      <b>Enable Back in Stock Alert</b> – Displays a notification form when a
-                      product or selected variant is <b>out of stock</b>. Customers can enter
-                      their email address to be notified automatically when the item is back in
-                      stock.
-                    </li>
-
-                    <li>
-                      <b>Heading</b> – Customize the title displayed above the notification
-                      form, such as <b>"Notify me when available"</b>.
-                    </li>
-                  </ul>
-                  
-                  <img src="../images/back-in-stock-settings.png" alt="back-in-stock-settings" class="wide-image" />
-                  
-                  <div class="info-block info-block--type-tip">
-                    <div class="info-block__title">
-                      <p class="step">
-                        <i class="fa-solid fa-circle-check"></i> Steps
-                      </p>
-                    </div>
-
-                    <ul>
-                      <li class="info-block__content">
-                        Open the <b>Theme Customizer</b>.
-                      </li>
-                      <li class="info-block__content">
-                        Navigate to the <b>Product Template</b>.
-                      </li>
-                      <li class="info-block__content">
-                        Select the <b>Buy Buttons</b> block.
-                      </li>
-                      <li class="info-block__content">
-                        Enable <b>Back in Stock Alert</b>.
-                      </li>
-                      <li class="info-block__content">
-                        Enter a heading for the notification form, such as
-                        <b>Notify me when available</b>.
-                      </li>
-                      <li class="info-block__content">
-                        Optionally enable the <b>Dynamic Checkout Button</b> and
-                        <b>Gift Recipient Form</b>.
-                      </li>
-                      <li class="info-block__content">
-                        Click <b>Save</b> to apply the changes.
-                      </li>
-                      <li class="info-block__content">
-                        The Back in Stock notification form will automatically appear only when
-                        the product or selected variant is <b>out of stock</b>. It will be
-                        hidden when the product is available for purchase.
-                      </li>
-                    </ul>
-                  </div>
-
-
-
-                  <br /><br />
-
-                </div>
-
-                <li>
-                  <strong>Add to Cart Button:</strong> Displays the primary action button on the product page, allowing
-                  customers to add products to their cart.
-
-                  <ul>
-                    <li>
-                      <strong>Show Dynamic Checkout Button:</strong> Enable this option to takes customers directly to
-                      the checkout page for faster purchase completion.
-                    </li>
-                    <li>
-                      <strong>Show Dynamic Checkout Button:</strong> Enable this option to display a Dynamic Checkout
-                      button,which lets customers skip the cart and go directly to the checkout page for a faster and
-                      smoother purchase experience.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Trust Badges:</strong> Displays payment icons, helping customers feel confident about making a
-                  purchase.
-
-                  <ul>
-                    <li>
-                      <strong>Heading:</strong> Set a title or heading for the trust badges section to give context,
-                      such as “Secure Payments” or “We Accept.”
-                    </li>
-                    <li>
-                      <strong>Alignment:</strong> Choose how the trust badges are positioned on the page:
-                      <ul>
-                        <li><strong>Left:</strong> Aligns the badges to the left side.</li>
-                        <li><strong>Center:</strong> Centers the badges horizontally.</li>
-                        <li><strong>Right:</strong> Aligns the badges to the right side.</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Complementary Products:</strong> Displays related or recommended products that pair well with
-                  the current product, encouraging additional purchases and enhancing the shopping experience.
-                  <br />
-                  <br />
-                  <img src="../images/complementary-product.png" alt="complementary product" class="wide-image" />
-                  <ul>
-                    <li>
-                      <strong>Heading:</strong> Set the title for this section, such as “Pairs Well With,” to introduce
-                      the recommended products.
-                    </li>
-                    <li>
-                      <strong>Number of Products to Load:</strong> Controls how many complementary products are loaded
-                      in total.
-                    </li>
-                    <li>
-                      <strong>Number of Products to Show (Desktop):</strong> Sets how many products are visible at once
-                      on desktop screens.
-                    </li>
-                    <li>
-                      <strong>Number of Products to Show (Mobile):</strong> Choose to display either one or two products
-                      at a time on mobile devices for better usability.
-                    </li>
-                    <li>
-                      <strong>Image Aspect Ratio:</strong> Select the shape of the product images, such as Portrait, to
-                      maintain consistent visual presentation.
-                    </li>
-                    <li>
-                      <strong>Show Secondary Image:</strong> Enable this option to display a secondary product image on
-                      hover, providing customers with additional product views.
-                    </li>
-                    <li>
-                      <strong>Enable Quick View:</strong> Turn this on to allow customers to see a quick preview of the
-                      product without leaving the current page.
-                    </li>
-                    <h3>How to Add Complementary Products</h3>
-                    <div class="info-block info-block--type-tip">
-                      <div class="info-block__title">
-                        <p class="step">
-                          <i class="fa-solid fa-circle-check"></i> Steps
-                        </p>
-                      </div>
-
-                      <ul>
-                        <li class="info-block__content">
-                          Go to your Shopify Admin and open the <b>Apps</b> section.
-                        </li>
-                        <li class="info-block__content">
-                          Select the <b>Search & Discovery</b> app.
-                        </li>
-                        <li class="info-block__content">
-                          Navigate to the <b>Recommendations</b> feature within the app.
-                        </li>
-                        <li class="info-block__content">
-                          Search and select the products you want to add as complementary products.
-                        </li>
-                        <li class="info-block__content">
-                          Add the selected products as complementary items.
-                        </li>
-                        <li class="info-block__content">
-                          Click <b>Save</b> to apply your changes.
-                        </li>
-                      </ul>
-                    </div>
-
-                  </ul>
-                  <img src="../images/search-discovery-complementary-product-add.png" alt="complementary product"
-                    class="wide-image" />
-                </li>
-                <br />
-
-                <li>
-                  <strong>Collapsible Tab:</strong> Adds a section with a collapsible tab on the product page to
-                  organize content neatly and save space.
-
-                  <ul>
-                    <li>
-                      <strong>Heading:</strong> Set the title for the tab, such as “Description” or any custom heading.
-                    </li>
-                    <li>
-                      <strong>Content:</strong> Add a short description or content that explains the heading or answers
-                      a question related to the product.
-                    </li>
-                    <li>
-                      <strong>Apply Top Border:</strong> Enable to add a border line above the tab content for visual
-                      separation.
-                    </li>
-                    <li>
-                      <strong>Apply Bottom Border:</strong> Enable to add a border line below the tab content for
-                      clearer division.
-                    </li>
-                    <li>
-                      <strong>Show Product Description:</strong> When enabled, the default product description is
-                      displayed inside this collapsible tab.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Share:</strong> Displays social media icons on the product page, allowing customers to easily
-                  share the product on platforms like Facebook, Twitter, Instagram, and more. This helps increase
-                  product visibility and reach.
-                </li>
-              </ul>
-              <h3>Product Recommendations</h3>
+              <h4>Back in Stock Settings</h4>
+              <br />
               <p>
-                The <b>Product Recommendations</b> section displays suggested products related to the current item on
-                the product page.
-                This helps customers discover additional products they may like, increasing engagement and encouraging
-                higher order value.
-                In the Gravity theme, these recommendations are automatically powered by Shopify and can be configured
-                using the
-                <b>Search & Discovery</b> app.
+                These options let you configure the Back in Stock notification feature and
+                customize how it appears on the product page.
               </p>
-
-              <h3>How to Configure Product Recommendations</h3>
-              <ul class="article-list list-unstyled">
+              <ul>
                 <li>
-                  <strong>Color Scheme:</strong> Select a color scheme (such as Scheme 1) to control the background,
-                  text, and accent
-                  colors of the section.
+                  <b>Show Dynamic Checkout Button</b> – Displays an
+                  accelerated checkout button, such as <b>Buy it now</b>,
+                  allowing customers to purchase products directly using
+                  supported payment methods.
                 </li>
 
                 <li>
-                  <strong>Heading:</strong> Set the title for the recommendation section, such as <em>You May Also
-                    Like</em> or
-                  <em>Recommended Products</em>.
+                  <b>Show Gift Recipient Form</b> – Allows customers to send
+                  the product as a gift by entering the recipient's details
+                  during checkout.
                 </li>
 
                 <li>
-                  <strong>Heading Font Weight:</strong> Adjust the thickness of the heading text to control how bold or
-                  light the
-                  title appears.
+                  <b>Enable Back in Stock Alert</b> – Displays a notification
+                  form when a product or selected variant is
+                  <b>out of stock</b>. Customers can enter their email address
+                  to be notified automatically when the item is back in stock.
                 </li>
 
                 <li>
-                  <strong>Heading Alignment:</strong> Choose the alignment of the section heading.
-                  <ul>
-                    <li><strong>Left:</strong> Aligns the heading to the left side.</li>
-                    <li><strong>Center:</strong> Centers the heading horizontally.</li>
-                    <li><strong>Right:</strong> Aligns the heading to the right side.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Number of Products to Load:</strong> Controls how many recommended products are fetched in
-                  total from
-                  Shopify recommendations.
-                </li>
-
-                <li>
-                  <strong>Number of Products to Show (Desktop):</strong> Determines how many products are visible at
-                  once on desktop
-                  screens.
-                </li>
-
-                <li>
-                  <strong>Number of Products to Show (Mobile):</strong> Choose whether to display one or two products at
-                  a time on
-                  mobile devices for better responsiveness.
-                </li>
-
-                <li>
-                  <strong>Show Vendor:</strong> Enable this option to display the product vendor or brand name on the
-                  product cards.
-                </li>
-
-                <li>
-                  <strong>Capitalize Product Title:</strong> Turn on this option to automatically display product titles
-                  in
-                  uppercase format.
-                </li>
-
-                <li>
-                  <strong>Image Aspect Ratio:</strong> Set the shape of the product images displayed in the
-                  recommendation cards,
-                  such as <em>Portrait</em> for vertical images.
-                </li>
-
-                <li>
-                  <strong>Product Info Position:</strong> Controls where the product information (title and price)
-                  appears in the
-                  product card.
-                  <ul>
-                    <li><strong>Over Image:</strong> Displays product information overlayed on the product image.</li>
-                    <li><strong>Below Image:</strong> Displays product details below the product image.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Show Product Info Background Color:</strong> Enable this option to apply a background color
-                  behind the
-                  product information area for better readability.
-                </li>
-
-                <li>
-                  <strong>Show Secondary Image:</strong> Displays a second product image when customers hover over the
-                  product card,
-                  giving them another view of the product.
-                </li>
-
-                <li>
-                  <strong>Enable Quick View:</strong> Allows customers to preview the product in a quick view popup
-                  without leaving
-                  the current page.
-                </li>
-
-                <li>
-                  <strong>Show Color Swatches:</strong> Displays available color variants as swatches on the product
-                  card if the
-                  product has color options.
-                </li>
-
-                <li>
-                  <strong>Section Spacing:</strong> Adjust the top and bottom spacing of the section to control the
-                  distance between
-                  this section and other sections on the page.
+                  <b>Heading</b> – Customize the title displayed above the
+                  notification form, such as
+                  <b>"Notify me when available"</b>.
                 </li>
               </ul>
-              <img src="../images/product-recommendation.png" alt="footer.png" class="wide-image" />
 
-              <h3>How to Configure Product Recommendations in Shopify Search & Discovery</h3>
-              <div class="info-block info-block--type-tip">
-                <div class="info-block__title">
-                  <p class="step">
-                    <i class="fa-solid fa-circle-check"></i> Steps
-                  </p>
+              <img src="../images/back-in-stock-settings.png" alt="back-in-stock-settings" class="wide-image" />
+
+              <div class="info-note article-block">
+                <div class="step-title">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Steps
                 </div>
-
                 <ul>
                   <li class="info-block__content">
-                    Go to your <b>Shopify Admin</b>.
+                    Open the <b>Theme Customizer</b>.
                   </li>
                   <li class="info-block__content">
-                    Navigate to <b>Apps</b> and open the <b>Search & Discovery</b> app.
+                    Navigate to the <b>Product Template</b>.
                   </li>
                   <li class="info-block__content">
-                    Click on the <b>Recommendations</b> section inside the app.
+                    Select the <b>Buy Buttons</b> block.
                   </li>
                   <li class="info-block__content">
-                    Select a product for which you want to configure recommendations.
+                    Enable <b>Back in Stock Alert</b>.
                   </li>
                   <li class="info-block__content">
-                    Add related or recommended products that should appear on the product page.
+                    Enter a heading for the notification form, such as
+                    <b>Notify me when available</b>.
                   </li>
                   <li class="info-block__content">
-                    Save the changes to apply the recommendations.
+                    Optionally enable the <b>Dynamic Checkout Button</b> and
+                    <b>Gift Recipient Form</b>.
+                  </li>
+                  <li class="info-block__content">
+                    Click <b>Save</b> to apply the changes.
+                  </li>
+                  <li class="info-block__content">
+                    The Back in Stock notification form will automatically
+                    appear only when the product or selected variant is
+                    <b>out of stock</b>. It will be hidden when the product is
+                    available for purchase.
                   </li>
                 </ul>
-
-
               </div>
-              <img src="../images/product-recommendation-search&discovery-app.png" alt="footer.png"
+            </div>
+            <br />
+            <li>
+              <strong>Add to Cart Button:</strong> Displays the primary action
+              button on the product page, allowing customers to add products
+              to their cart.
+
+              <ul>
+                <li>
+                  <strong>Show Dynamic Checkout Button:</strong> Enable this
+                  option to takes customers directly to the checkout page for
+                  faster purchase completion.
+                </li>
+                <li>
+                  <strong>Show Dynamic Checkout Button:</strong> Enable this
+                  option to display a Dynamic Checkout button,which lets
+                  customers skip the cart and go directly to the checkout page
+                  for a faster and smoother purchase experience.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <strong>Trust Badges:</strong> Displays payment icons, helping
+              customers feel confident about making a purchase.
+
+              <ul>
+                <li>
+                  <strong>Heading:</strong> Set a title or heading for the
+                  trust badges section to give context, such as “Secure
+                  Payments” or “We Accept.”
+                </li>
+                <li>
+                  <strong>Alignment:</strong> Choose how the trust badges are
+                  positioned on the page:
+                  <ul>
+                    <li>
+                      <strong>Left:</strong> Aligns the badges to the left
+                      side.
+                    </li>
+                    <li>
+                      <strong>Center:</strong> Centers the badges
+                      horizontally.
+                    </li>
+                    <li>
+                      <strong>Right:</strong> Aligns the badges to the right
+                      side.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <strong>Complementary Products:</strong> Displays related or
+              recommended products that pair well with the current product,
+              encouraging additional purchases and enhancing the shopping
+              experience.
+              <br />
+              <img src="../images/complementary-product.png" alt="complementary product" class="wide-image" />
+              <ul>
+                <li>
+                  <strong>Heading:</strong> Set the title for this section,
+                  such as “Pairs Well With,” to introduce the recommended
+                  products.
+                </li>
+                <li>
+                  <strong>Number of Products to Load:</strong> Controls how
+                  many complementary products are loaded in total.
+                </li>
+                <li>
+                  <strong>Number of Products to Show (Desktop):</strong> Sets
+                  how many products are visible at once on desktop screens.
+                </li>
+                <li>
+                  <strong>Number of Products to Show (Mobile):</strong> Choose
+                  to display either one or two products at a time on mobile
+                  devices for better usability.
+                </li>
+                <li>
+                  <strong>Image Aspect Ratio:</strong> Select the shape of the
+                  product images, such as Portrait, to maintain consistent
+                  visual presentation.
+                </li>
+                <li>
+                  <strong>Show Secondary Image:</strong> Enable this option to
+                  display a secondary product image on hover, providing
+                  customers with additional product views.
+                </li>
+                <li>
+                  <strong>Enable Quick View:</strong> Turn this on to allow
+                  customers to see a quick preview of the product without
+                  leaving the current page.
+                </li>
+                <br />
+                <h3>How to Add Complementary Products</h3>
+                <div class="info-note article-block">
+                  <div class="step-title">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    Steps
+                  </div>
+                  <ul>
+                    <li class="info-block__content">
+                      Go to your Shopify Admin and open the
+                      <b>Apps</b> section.
+                    </li>
+                    <li class="info-block__content">
+                      Select the <b>Search &amp; Discovery</b> app.
+                    </li>
+                    <li class="info-block__content">
+                      Navigate to the <b>Recommendations</b> feature within
+                      the app.
+                    </li>
+                    <li class="info-block__content">
+                      Search and select the products you want to add as
+                      complementary products.
+                    </li>
+                    <li class="info-block__content">
+                      Add the selected products as complementary items.
+                    </li>
+                    <li class="info-block__content">
+                      Click <b>Save</b> to apply your changes.
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+              <img src="../images/search-discovery-complementary-product-add.png" alt="complementary product"
                 class="wide-image" />
-              <h3>Recently Viewed</h3>
-              <p>
-                The <b>Recently Viewed</b> section displays products that customers have recently viewed while browsing
-                your store.
-                This feature helps customers quickly return to items they were interested in, improving navigation and
-                increasing
-                the chances of completing a purchase. The section automatically updates based on the customer's browsing
-                history
-                and shows the most recently viewed products on the product page.
-              </p>
+            </li>
+            <br />
 
-              <h3>How to Configure Recently Viewed</h3>
-              <ul class="article-list list-unstyled">
+            <li>
+              <strong>Collapsible Tab:</strong> Adds a section with a
+              collapsible tab on the product page to organize content neatly
+              and save space.
 
+              <ul>
                 <li>
-                  <strong>Color Scheme:</strong> Choose a color scheme (such as Scheme 1) to control the background,
-                  text, and
-                  accent colors of the section.
+                  <strong>Heading:</strong> Set the title for the tab, such as
+                  “Description” or any custom heading.
                 </li>
-
                 <li>
-                  <strong>Heading:</strong> Set the title for the section, such as <em>Recently Viewed</em> or any
-                  custom heading
-                  you prefer.
+                  <strong>Content:</strong> Add a short description or content
+                  that explains the heading or answers a question related to
+                  the product.
                 </li>
-
                 <li>
-                  <strong>Heading Font Weight:</strong> Adjust the thickness of the heading text to control how bold or
-                  light the
-                  title appears.
+                  <strong>Apply Top Border:</strong> Enable to add a border
+                  line above the tab content for visual separation.
                 </li>
-
                 <li>
-                  <strong>Heading Alignment:</strong> Choose the alignment of the section heading.
-                  <ul>
-                    <li><strong>Left:</strong> Aligns the heading to the left side.</li>
-                    <li><strong>Center:</strong> Centers the heading horizontally.</li>
-                    <li><strong>Right:</strong> Aligns the heading to the right side.</li>
-                  </ul>
+                  <strong>Apply Bottom Border:</strong> Enable to add a border
+                  line below the tab content for clearer division.
                 </li>
-
                 <li>
-                  <strong>Number of Columns per Row:</strong> Controls how many products are displayed in a single row
-                  on desktop
-                  screens.
-                </li>
-
-                <li>
-                  <strong>Image Aspect Ratio:</strong> Select the shape of the product images displayed in the product
-                  cards,
-                  such as <em>Portrait</em> for vertically oriented images.
-                </li>
-
-                <li>
-                  <strong>Mobile Layout:</strong> Choose how many products appear in each row on mobile devices.
-                  <ul>
-                    <li><strong>One Column:</strong> Displays one product per row for a larger and clearer view.</li>
-                    <li><strong>Two Columns:</strong> Displays two products per row for a more compact layout.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Section Spacing:</strong> Adjust the top and bottom spacing to control the distance between
-                  this section
-                  and other sections on the page.
+                  <strong>Show Product Description:</strong> When enabled, the
+                  default product description is displayed inside this
+                  collapsible tab.
                 </li>
               </ul>
+            </li>
+            <li>
+              <strong>Share:</strong> Displays social media icons on the
+              product page, allowing customers to easily share the product on
+              platforms like Facebook, Twitter, Instagram, and more. This
+              helps increase product visibility and reach.
+            </li>
+          </ul>
+          <br />
+          <h3>Product Recommendations</h3>
+          <p>
+            The <b>Product Recommendations</b> section displays suggested
+            products related to the current item on the product page. This
+            helps customers discover additional products they may like,
+            increasing engagement and encouraging higher order value. In the
+            Gravity theme, these recommendations are automatically powered by
+            Shopify and can be configured using the
+            <b>Search &amp; Discovery</b> app.
+          </p>
+          <br />
+          <h3>How to Configure Product Recommendations</h3>
+          <ul>
+            <li>
+              <strong>Color Scheme:</strong> Select a color scheme (such as
+              Scheme 1) to control the background, text, and accent colors of
+              the section.
+            </li>
 
-              <img src="../images/recently-viewed.png" alt="footer.png" class="wide-image" />
+            <li>
+              <strong>Heading:</strong> Set the title for the recommendation
+              section, such as <em>You May Also Like</em> or
+              <em>Recommended Products</em>.
+            </li>
 
-              <h3>How Recently Viewed Products Work</h3>
-              <ul class="article-list list-unstyled">
+            <li>
+              <strong>Heading Font Weight:</strong> Adjust the thickness of
+              the heading text to control how bold or light the title appears.
+            </li>
 
+            <li>
+              <strong>Heading Alignment:</strong> Choose the alignment of the
+              section heading.
+              <ul>
                 <li>
-                  The Recently Viewed section automatically tracks the products that a customer visits while browsing
-                  your store.
+                  <strong>Left:</strong> Aligns the heading to the left side.
                 </li>
-
                 <li>
-                  When a customer views multiple products, those items are saved in the browser and displayed in this
-                  section.
+                  <strong>Center:</strong> Centers the heading horizontally.
                 </li>
-
                 <li>
-                  The products appear in order of the most recently viewed items.
+                  <strong>Right:</strong> Aligns the heading to the right
+                  side.
                 </li>
-
-                <li>
-                  No manual configuration is required for selecting products, as the section dynamically updates based
-                  on the
-                  customer's browsing activity.
-                </li>
-
               </ul>
+            </li>
 
-              <div class="about-main" id="about">
-                <div class="theme-colors">
-                  <h3>Quick Order List</h3>
+            <li>
+              <strong>Number of Products to Load:</strong> Controls how many
+              recommended products are fetched in total from Shopify
+              recommendations.
+            </li>
 
-                  <p>
-                    The <strong>Quick Order List</strong> section is available on the product page and is designed to
-                    help customers quickly purchase multiple variants of a product in a single view.
-                    It is especially useful for stores with products that have multiple sizes, colors, or wholesale
-                    options.
-                    Customers can view variants, check availability, and add items to the cart efficiently without
-                    navigating away.
-                  </p>
+            <li>
+              <strong>Number of Products to Show (Desktop):</strong>
+              Determines how many products are visible at once on desktop
+              screens.
+            </li>
 
-                  <p>
-                    This section improves conversion rates by simplifying bulk ordering and reducing the number of steps
-                    required
-                    to add multiple variants to the cart.
-                  </p>
+            <li>
+              <strong>Number of Products to Show (Mobile):</strong> Choose
+              whether to display one or two products at a time on mobile
+              devices for better responsiveness.
+            </li>
 
-                  <h3>Quick Order List Settings</h3>
+            <li>
+              <strong>Show Vendor:</strong> Enable this option to display the
+              product vendor or brand name on the product cards.
+            </li>
 
-                  <p>
-                    The Quick Order List section provides several customization options to control how product variants
-                    are
-                    displayed and how customers interact with the list on the product page.
-                  </p>
+            <li>
+              <strong>Capitalize Product Title:</strong> Turn on this option
+              to automatically display product titles in uppercase format.
+            </li>
 
-                  <ul>
-                    <li>
-                      <b>Color Scheme</b> – Select a color scheme (such as Scheme 1) to define the background, text, and
-                      accent
-                      colors of the section.
-                    </li>
+            <li>
+              <strong>Image Aspect Ratio:</strong> Set the shape of the
+              product images displayed in the recommendation cards, such as
+              <em>Portrait</em> for vertical images.
+            </li>
 
-                    <li>
-                      <b>Section Header</b> – Enable or customize the header area displayed above the Quick Order List
-                      section.
-                    </li>
+            <li>
+              <strong>Product Info Position:</strong> Controls where the
+              product information (title and price) appears in the product
+              card.
+              <ul>
+                <li>
+                  <strong>Over Image:</strong> Displays product information
+                  overlayed on the product image.
+                </li>
+                <li>
+                  <strong>Below Image:</strong> Displays product details below
+                  the product image.
+                </li>
+              </ul>
+            </li>
 
-                    <li>
-                      <b>Heading</b> – Enter the title shown at the top of the section (for example, <em>Quick Order
-                        List</em>).
-                    </li>
+            <li>
+              <strong>Show Product Info Background Color:</strong> Enable this
+              option to apply a background color behind the product
+              information area for better readability.
+            </li>
 
-                    <li>
-                      <b>Heading Font Weight</b> – Choose the font weight for the heading text (for example: Light,
-                      Regular, or Bold)
-                      to control how prominent the title appears.
-                    </li>
+            <li>
+              <strong>Show Secondary Image:</strong> Displays a second product
+              image when customers hover over the product card, giving them
+              another view of the product.
+            </li>
 
-                    <li>
-                      <b>Heading Alignment</b> – Set the alignment of the heading:
-                      <ul>
-                        <li><b>Left</b> – Aligns the heading to the left side.</li>
-                        <li><b>Center</b> – Centers the heading horizontally.</li>
-                        <li><b>Right</b> – Aligns the heading to the right side.</li>
-                      </ul>
-                    </li>
+            <li>
+              <strong>Enable Quick View:</strong> Allows customers to preview
+              the product in a quick view popup without leaving the current
+              page.
+            </li>
 
-                    <li>
-                      <b>Show Variant Image</b> – Displays the image for each product variant in the list.
-                    </li>
+            <li>
+              <strong>Show Color Swatches:</strong> Displays available color
+              variants as swatches on the product card if the product has
+              color options.
+            </li>
 
-                    <li>
-                      <b>Show SKU</b> – Displays the SKU code for each variant to help with product identification.
-                    </li>
+            <li>
+              <strong>Section Spacing:</strong> Adjust the top and bottom
+              spacing of the section to control the distance between this
+              section and other sections on the page.
+            </li>
+          </ul>
+          <img src="../images/product-recommendation.png" alt="Product recommendation settings screenshot"
+            class="wide-image" />
+          <br />
+          <h3>
+            How to Configure Product Recommendations in Shopify Search &amp;
+            Discovery
+          </h3>
+          <div class="info-note">
+            <div class="step-title">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Steps
+            </div>
+            <ul>
+              <li class="info-block__content">
+                Go to your <b>Shopify Admin</b>.
+              </li>
+              <li class="info-block__content">
+                Navigate to <b>Apps</b> and open the
+                <b>Search &amp; Discovery</b> app.
+              </li>
+              <li class="info-block__content">
+                Click on the <b>Recommendations</b> section inside the app.
+              </li>
+              <li class="info-block__content">
+                Select a product for which you want to configure
+                recommendations.
+              </li>
+              <li class="info-block__content">
+                Add related or recommended products that should appear on the
+                product page.
+              </li>
+              <li class="info-block__content">
+                Save the changes to apply the recommendations.
+              </li>
+            </ul>
+          </div>
+          <img src="../images/product-recommendation-search&discovery-app.png" alt="footer.png" class="wide-image" />
+          <br />
+          <h3>Recently Viewed</h3>
+          <p>
+            The <b>Recently Viewed</b> section displays products that
+            customers have recently viewed while browsing your store. This
+            feature helps customers quickly return to items they were
+            interested in, improving navigation and increasing the chances of
+            completing a purchase. The section automatically updates based on
+            the customer's browsing history and shows the most recently viewed
+            products on the product page.
+          </p>
+          <br />
+          <h3>How to Configure Recently Viewed</h3>
+          <ul>
+            <li>
+              <strong>Color Scheme:</strong> Choose a color scheme (such as
+              Scheme 1) to control the background, text, and accent colors of
+              the section.
+            </li>
 
-                    <li>
-                      <b>Section Spacing</b> – Controls the spacing around the section:
-                      <ul>
-                        <li><b>Top Spacing</b> – Set the space above the Quick Order List section (e.g., 80px).</li>
-                        <li><b>Bottom Spacing</b> – Set the space below the Quick Order List section (e.g., 40px).</li>
-                      </ul>
-                    </li>
-                  </ul>
+            <li>
+              <strong>Heading:</strong> Set the title for the section, such as
+              <em>Recently Viewed</em> or any custom heading you prefer.
+            </li>
 
-                  <img src="../images/quick-order-list-settings.png" alt="quick-order-list-settings"
-                    class="wide-image" />
+            <li>
+              <strong>Heading Font Weight:</strong> Adjust the thickness of
+              the heading text to control how bold or light the title appears.
+            </li>
 
-                  <h3>How to Configure the Quick Order List Section</h3>
-                  <div class="info-block info-block--type-tip">
-                    <div class="info-block__title">
-                      <p class="step">
-                        <i class="fa-solid fa-circle-check"></i> Steps
-                      </p>
-                    </div>
+            <li>
+              <strong>Heading Alignment:</strong> Choose the alignment of the
+              section heading.
+              <ul>
+                <li>
+                  <strong>Left:</strong> Aligns the heading to the left side.
+                </li>
+                <li>
+                  <strong>Center:</strong> Centers the heading horizontally.
+                </li>
+                <li>
+                  <strong>Right:</strong> Aligns the heading to the right
+                  side.
+                </li>
+              </ul>
+            </li>
 
-                    <ul>
-                      <li class="info-block__content">
-                        Open the <b>Theme Customizer</b>.
-                      </li>
+            <li>
+              <strong>Number of Columns per Row:</strong> Controls how many
+              products are displayed in a single row on desktop screens.
+            </li>
 
-                      <li class="info-block__content">
-                        Navigate to the <b>Product Page Template</b>.
-                      </li>
+            <li>
+              <strong>Image Aspect Ratio:</strong> Select the shape of the
+              product images displayed in the product cards, such as
+              <em>Portrait</em> for vertically oriented images.
+            </li>
 
-                      <li class="info-block__content">
-                        Select the <b>Quick Order List</b> section.
-                      </li>
+            <li>
+              <strong>Mobile Layout:</strong> Choose how many products appear
+              in each row on mobile devices.
+              <ul>
+                <li>
+                  <strong>One Column:</strong> Displays one product per row
+                  for a larger and clearer view.
+                </li>
+                <li>
+                  <strong>Two Columns:</strong> Displays two products per row
+                  for a more compact layout.
+                </li>
+              </ul>
+            </li>
 
-                      <li class="info-block__content">
-                        Configure the section settings such as heading, alignment, and display options.
-                      </li>
+            <li>
+              <strong>Section Spacing:</strong> Adjust the top and bottom
+              spacing to control the distance between this section and other
+              sections on the page.
+            </li>
+          </ul>
+          <img src="../images/recently-viewed.png" alt="footer.png" class="wide-image" />
+          <br />
+          <h3>How Recently Viewed Products Work</h3>
+          <ul>
+            <li>
+              The Recently Viewed section automatically tracks the products
+              that a customer visits while browsing your store.
+            </li>
 
-                      <li class="info-block__content">
-                        Adjust spacing values for top and bottom as needed.
-                      </li>
+            <li>
+              When a customer views multiple products, those items are saved
+              in the browser and displayed in this section.
+            </li>
 
-                      <li class="info-block__content">
-                        Click <b>Save</b> to apply the changes.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            <li>
+              The products appear in order of the most recently viewed items.
+            </li>
+
+            <li>
+              No manual configuration is required for selecting products, as
+              the section dynamically updates based on the customer's browsing
+              activity.
+            </li>
+          </ul>
+          <br />
+          <h3>Quick Order List</h3>
+          <p>
+            The <strong>Quick Order List</strong> section is available on the
+            product page and is designed to help customers quickly purchase
+            multiple variants of a product in a single view. It is especially
+            useful for stores with products that have multiple sizes, colors,
+            or wholesale options. Customers can view variants, check
+            availability, and add items to the cart efficiently without
+            navigating away.
+          </p>
+          <p>
+            This section improves conversion rates by simplifying bulk
+            ordering and reducing the number of steps required to add multiple
+            variants to the cart.
+          </p>
+          <br />
+          <h3>Quick Order List Settings</h3>
+          <p>
+            The Quick Order List section provides several customization
+            options to control how product variants are displayed and how
+            customers interact with the list on the product page.
+          </p>
+          <ul>
+            <li>
+              <b>Color Scheme</b> – Select a color scheme (such as Scheme 1)
+              to define the background, text, and accent colors of the
+              section.
+            </li>
+
+            <li>
+              <b>Section Header</b> – Enable or customize the header area
+              displayed above the Quick Order List section.
+            </li>
+
+            <li>
+              <b>Heading</b> – Enter the title shown at the top of the section
+              (for example, <em>Quick Order List</em>).
+            </li>
+
+            <li>
+              <b>Heading Font Weight</b> – Choose the font weight for the
+              heading text (for example: Light, Regular, or Bold) to control
+              how prominent the title appears.
+            </li>
+
+            <li>
+              <b>Heading Alignment</b> – Set the alignment of the heading:
+              <ul>
+                <li><b>Left</b> – Aligns the heading to the left side.</li>
+                <li><b>Center</b> – Centers the heading horizontally.</li>
+                <li><b>Right</b> – Aligns the heading to the right side.</li>
+              </ul>
+            </li>
+
+            <li>
+              <b>Show Variant Image</b> – Displays the image for each product
+              variant in the list.
+            </li>
+
+            <li>
+              <b>Show SKU</b> – Displays the SKU code for each variant to help
+              with product identification.
+            </li>
+
+            <li>
+              <b>Section Spacing</b> – Controls the spacing around the
+              section:
+              <ul>
+                <li>
+                  <b>Top Spacing</b> – Set the space above the Quick Order
+                  List section (e.g., 80px).
+                </li>
+                <li>
+                  <b>Bottom Spacing</b> – Set the space below the Quick Order
+                  List section (e.g., 40px).
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <img src="../images/quick-order-list-settings.png" alt="Quick order list screenshot" class="wide-image" />
+          <br />
+          <h3>How to Configure the Quick Order List Section</h3>
+          <div class="info-note">
+            <div class="step-title">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Steps
+            </div>
+            <ul>
+              <li class="info-block__content">
+                Open the <b>Theme Customizer</b>.
+              </li>
+
+              <li class="info-block__content">
+                Navigate to the <b>Product Page Template</b>.
+              </li>
+
+              <li class="info-block__content">
+                Select the <b>Quick Order List</b> section.
+              </li>
+
+              <li class="info-block__content">
+                Configure the section settings such as heading, alignment, and
+                display options.
+              </li>
+
+              <li class="info-block__content">
+                Adjust spacing values for top and bottom as needed.
+              </li>
+
+              <li class="info-block__content">
+                Click <b>Save</b> to apply the changes.
+              </li>
+            </ul>
+          </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-head">
+          <p class="eyebrow">Questions</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-header active" type="button">
+              <h6>Why are my product images not displaying correctly?</h6>
+            </button>
+            <div class="faq-content" style="max-height: 200px">
+              <div class="faq-content-inner">
+                <p>
+                  This usually happens when the image aspect ratio in the product section
+                  settings does not match the uploaded image size. Try adjusting the
+                  <b>Image Aspect Ratio</b> in the product page settings or upload images
+                  with consistent dimensions for the best display.
+                </p>
               </div>
+            </div>
+          </div>
 
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <h6>Why can’t I see the Recently Viewed products?</h6>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>
+                  Recently viewed products only appear after a customer has browsed
+                  multiple products in the store. If you are testing the feature, open a
+                  few different product pages and then return to a product page to see
+                  the section populate automatically.
+                </p>
+              </div>
+            </div>
+          </div>
 
-              <div class="Faq">
-                <h3>FAQs</h3>
-                <div class="accordion-bottom">
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>Why are my product images not displaying correctly?</h6>
-                    </div>
-                    <div class="accordion__content">
-                      <p>
-                        This usually happens when the image aspect ratio in the product section
-                        settings does not match the uploaded image size. Try adjusting the
-                        <b>Image Aspect Ratio</b> in the product page settings or upload images
-                        with consistent dimensions for the best display.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>Why can't I see the Recently Viewed products?</h6>
-                    </div>
-                    <div class="accordion__content">
-                      <p>
-                        Recently viewed products only appear after a customer has browsed
-                        multiple products in the store. If you are testing the feature, open a
-                        few different product pages and then return to a product page to see
-                        the section populate automatically.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>Can I change the order of blocks on the product page?</h6>
-                    </div>
-                    <div class="accordion__content">
-                      <p>
-                        Yes. In the Theme Editor, open the product template and simply drag
-                        and drop the blocks in the left sidebar to rearrange them in the order
-                        you want them to appear on the product page.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <h6>Can I change the order of blocks on the product page?</h6>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>
+                  Yes. In the Theme Editor, open the product template and drag
+                  and drop the blocks to reorder them in the way you want them
+                  to appear.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+
+      <footer>
+        <p>© 2026 Themeshopy — Gravity theme documentation.</p>
+        <div class="footer-links">
+          <a href="../../home.html">All documentation</a>
+          <a href="https://help.shopify.com/en" target="_blank" rel="noopener">Shopify Guide</a>
+          <a href="https://www.themeshopy.com/pages/contact" target="_blank" rel="noopener">Support</a>
+        </div>
+      </footer>
+    </main>
+
+    <aside class="rail">
+      <p class="rail-title">On this page</p>
+      <ul id="railList">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#product-info">Product info</a></li>
+        <li><a href="#product-blocks">Product blocks</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </aside>
+  </div>
+
   <script src="../js/main.js"></script>
 </body>
 
