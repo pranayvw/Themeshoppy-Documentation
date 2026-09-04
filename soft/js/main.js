@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navSearch = document.getElementById('navSearch');
   const railLinks = document.querySelectorAll('#railList a');
   const sectionNodes = document.querySelectorAll('main section, main .hero');
+  const faqButtons = document.querySelectorAll('.faq-header');
 
   function updateProgress() {
     const root = document.documentElement;
@@ -40,15 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  document.querySelectorAll('.faq-header').forEach((button) => {
+  faqButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      const item = button.parentElement;
-      const content = item.querySelector('.faq-content');
+      const item = button.closest('.faq-item');
+      const content = item ? item.querySelector('.faq-content') : null;
       const isOpen = button.classList.contains('active');
 
-      document.querySelectorAll('.faq-header').forEach((header) => {
+      faqButtons.forEach((header) => {
         header.classList.remove('active');
-        const panel = header.parentElement.querySelector('.faq-content');
+        const panel = header.closest('.faq-item')?.querySelector('.faq-content');
         if (panel) panel.style.maxHeight = null;
       });
 
@@ -62,8 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (railLinks.length && sectionNodes.length) {
     const map = {};
     railLinks.forEach((link) => {
-      const id = link.getAttribute('href')?.replace('#', '');
-      if (id) map[id] = link;
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        map[href.slice(1)] = link;
+      }
     });
 
     const observer = new IntersectionObserver((entries) => {
