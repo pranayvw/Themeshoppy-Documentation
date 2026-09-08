@@ -1243,9 +1243,9 @@ li.info-block__content {
 }
 
 li.info-block__content a {
-  color: #d2d2d2;
+  color: var(--ink);
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .accordion-bottom {
@@ -1303,6 +1303,10 @@ li.info-block__content a {
 
 .accordion__header.active {
   border-bottom: 1px solid #aeb0a4;
+}
+
+.faq-content-inner a {
+  font-weight: bold;
 }
 
 /* Mobile Responsive */
