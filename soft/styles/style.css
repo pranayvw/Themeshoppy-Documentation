@@ -134,11 +134,11 @@ input:focus-visible {
   gap: 12px;
 }
 .brand img {
-  height: 24px;
-  width: auto;
-  display: block;
-  filter: grayscale(1) contrast(1.1);
-  opacity: 0.85;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  max-width: 100px;
+  max-height: 3rem;
 }
 .brand-name {
   font-family: "Fraunces", serif;
@@ -172,16 +172,23 @@ input:focus-visible {
   color: var(--ink);
 }
 .top-links .btn-demo {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--accent);
+  color: var(--white);
   padding: 9px 16px;
   border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
   box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
 }
 .top-links .btn-demo:hover {
-  background: var(--accent);
+  background: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--white);
 }
 .menu-toggle {
   display: none;
@@ -507,6 +514,7 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: top;
 }
 .preset-body {
   padding: 16px 18px 18px 18px;
@@ -1556,13 +1564,6 @@ p {
   align-items: center;
   gap: 12px;
 }
-.brand img {
-  height: 24px;
-  width: auto;
-  display: block;
-  filter: grayscale(1) contrast(1.1);
-  opacity: 0.85;
-}
 .brand-name {
   font-family: "Fraunces", serif;
   font-size: 19px;
@@ -1592,16 +1593,23 @@ p {
   color: var(--ink);
 }
 .top-links .btn-demo {
-  background: var(--ink);
+  background: var(--accent);
   color: var(--white);
   padding: 9px 16px;
   border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
   box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
 }
 .top-links .btn-demo:hover {
-  background: var(--accent);
+  background: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--white);
 }
 
 .menu-toggle {
@@ -2084,5 +2092,17 @@ footer p {
   }
   .hero h1 {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .topbar{
+    padding-inline: 1.5rem;
+  }
+  .top-links .btn-demo{
+    font-size: 11px;;
+  }
+  .topbar .brand-tag {
+    display: none;
   }
 }

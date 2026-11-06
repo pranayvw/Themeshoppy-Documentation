@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Rare" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rare - Scrolling cards</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="header-wrapper">
+    <header class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.themeshopy.com/" target="_blank"><img src="../images/themeshopy.png" alt="logo" /></a>
+        </div>
+        <div class="nav">
+          <ul class="user-nav-list">
+            <!-- <li><a href="../../home.html">Home</a></li> -->
+            <li>
+              <a href="https://help.shopify.com/en" target="_blank">Shopify Guide</a>
+            </li>
+            <li>
+              <a href="https://www.themeshopy.com/pages/contact" target="_blank">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+  </div>
+  <section class="container">
+    <div class="page-wrapper">
+      <div class="sidenavbar">
+        <span class="menu-close">
+          <i class="fa-solid fa-x"></i>
+        </span>
+        <a href="https://themes.shopify.com/designers/themeshopy-private-limited" target="_blank"
+          class="sidebar__header">
+          <span class="small-text">Themes</span>
+        </a>
+        <div class="side-bar-content">
+          <a href="../index.html" class="sidebar__current-theme">Rare</a>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Get Started</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/installationguide.html">Installation Guide</a>
+              <a href="../pages/update.html">How To Update Rare</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Header</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/header.html">Header section</a>
+              <a href="../pages/anouncement.html">Announcement Bar</a>
+              <a href="../pages/dropdown.html">Dropdown menu</a>
+              <a href="../pages/megamenu.html">Mega menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Footer</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/footer.html">Footer section</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Sections</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/slideshow.html">Slideshow hero</a>
+              <a href="../pages/collectionlist.html">Collection list</a>
+              <a href="../pages/scrollingZoom.html">Scrolling zoom</a>
+              <a href="../pages/fetauredTab.html">Featured tab</a>
+              <a href="../pages/builtPerfectSet.html">Build perfect set</a>
+              <a href="../pages/featuredproduct.html">Featured product</a>
+              <a href="../pages/scrollingCard.html">Scrolling cards</a>
+              <a href="../pages/testimonials.html">Testimonial</a>
+              <a href="../pages/shopTheLook.html">Shop the look</a>
+              <a href="../pages/promoBanner.html">Promo banner</a>
+              <a href="../pages/videoReview.html">Video reviews</a>
+              <a href="../pages/multicolumn.html">Multicolumns</a>
+              <a href="../pages/featuredBlog.html">Featured blog</a>
+              <a href="../pages/imagegallery.html">Image gallery</a>
+              <a href="../pages/imagewithtext.html">Image with text</a>
+              <a href="../pages/productRecommendation.html">Product recommendation</a>
+              <a href="../pages/scrollingShowcase.html">Scrolling showcase</a>
+              <a href="../pages/expandImageWithText.html">Expanding image with text</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Templates</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/productpage.html">Product</a>
+              <a href="../pages/collectionpage.html">Collection</a>
+              <a href="../pages/cart.html">Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Theme Settings</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/generalsetting.html">General Settings</a>
+              <a href="../pages/product-swatches.html">Product Swatches</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="main-content__wrapper">
+          <div class="main-content-text-wrapper">
+            <div class="about-main" id="about">
+              <div class="theme-colors">
+                <h2>Scrolling cards</h2>
+
+                <p>
+                  The <b>Scrolling cards</b> section delivers an immersive, editorial storytelling experience on your
+                  storefront. As customers scroll down the page, central product or lookbook cards move gracefully into
+                  view flanked by bold typographical keywords and optional floating decorative accent images on either
+                  side.
+                </p>
+
+                <img src="../images/scrolling-card.gif" alt="Scrolling cards Section Settings" class="wide-image" />
+
+                <h3>Scrolling cards Section Settings</h3>
+
+                <p>
+                  Configure section-wide color schemes, heading font sizes, and responsive viewport padding for the
+                  Scrolling cards section.
+                </p>
+                <img src="../images/scrolling-card-section-settings.png" alt="Scrolling cards Section Settings"
+                  class="wide-image" />
+                <div class="info-block info-block--type-tip">
+                  <div class="info-block__title">
+                    <p class="step">
+                      <i class="fa-solid fa-circle-check"></i> Steps
+                    </p>
+                  </div>
+
+                  <ul>
+                    <li class="info-block__content">
+                      From your Shopify admin, go to <b>Online Store → Themes</b>.
+                    </li>
+                    <li class="info-block__content">
+                      Click <b>Customize</b> to open the Theme Editor.
+                    </li>
+                    <li class="info-block__content">
+                      In the template sidebar, locate <b>Scrolling cards</b> (or click <b>Add section → Scrolling
+                        cards</b>).
+                    </li>
+                    <li class="info-block__content">
+                      Select your preferred <b>Color scheme</b> for the section background and text.
+                    </li>
+                    <li class="info-block__content">
+                      Choose the <b>Font size</b> for the flanking word titles (e.g., <em>Extra large</em>).
+                    </li>
+                    <li class="info-block__content">
+                      Adjust <b>Desktop padding</b> and <b>Mobile padding</b> sliders to control spacing.
+                    </li>
+                    <li class="info-block__content">
+                      Click <b>Save</b> to apply your changes.
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>Color scheme:</strong> Select a predefined theme color palette (e.g., <em>Scheme 1</em>,
+                    <em>Scheme 2</em>, etc.) to set background and typography styling for the entire section. Click
+                    <em>Edit scheme</em> to customize colors directly.
+                  </li>
+
+                  <li>
+                    <strong>Font size:</strong> Select the font size scale for the left and right flanking headline
+                    words (e.g., <em>Extra large</em>, <em>Large</em>, <em>Medium</em>, or <em>Small</em>).
+                  </li>
+
+                  <li>
+                    <strong>Desktop padding:</strong>
+                    <ul>
+                      <li>
+                        <strong>Padding top:</strong> Adjust the top vertical spacing on desktop screens (in pixels,
+                        e.g., <em>62 px</em>).
+                      </li>
+                      <li>
+                        <strong>Padding bottom:</strong> Adjust the bottom vertical spacing on desktop screens (in
+                        pixels, e.g., <em>62 px</em>).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Mobile padding:</strong>
+                    <ul>
+                      <li>
+                        <strong>Padding top:</strong> Adjust the top vertical spacing on mobile screens (in pixels,
+                        e.g., <em>0 px</em>).
+                      </li>
+                      <li>
+                        <strong>Padding bottom:</strong> Adjust the bottom vertical spacing on mobile screens (in
+                        pixels, e.g., <em>0 px</em>).
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <img src="../images/scrolling-card-block-settings.png" alt="Showcase item Block Settings"
+                  class="wide-image" />
+
+                <h3>Showcase Item Block Settings</h3>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>Showcase item:</strong> Each showcase item block represents an individual scrolling card
+                    slide consisting of a left column with a keyword and optional decorative image, a center card image
+                    with a link and description, and a right column with a keyword and optional decorative image.
+
+                    <ul>
+                      <li>
+                        <strong>Left column:</strong>
+                        <ul>
+                          <li>
+                            <strong>Left word:</strong> Enter the keyword or title text displayed on the left side (for
+                            example: <em>GOLDEN</em>). Supports dynamic source connections.
+                          </li>
+                          <li>
+                            <strong>Color:</strong> Choose a custom color for the left word text (for example:
+                            <em>#B6303A</em>).
+                          </li>
+                          <li>
+                            <strong>Show left image:</strong> Toggle on to display a decorative image alongside the left
+                            word.
+                          </li>
+                          <li>
+                            <strong>Image position:</strong> Choose whether the left decorative image is positioned at
+                            the <strong>Top</strong> or <strong>Bottom</strong> relative to the word.
+                          </li>
+                          <li>
+                            <strong>Left decorative Image:</strong> Upload or select an accent product graphic or
+                            decorative image for the left side.
+                          </li>
+                          <li>
+                            <strong>Image width:</strong> Adjust the relative display width percentage of the left
+                            decorative image using the slider (for example: <em>60%</em>).
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <strong>Center column:</strong>
+                        <ul>
+                          <li>
+                            <strong>Card Image:</strong> Upload or select the main high-quality card photograph (for
+                            example, a jewellery model shot or product lookbook photo).
+                          </li>
+                          <li>
+                            <strong>Card description:</strong> Enter optional rich text description copy displayed
+                            alongside or beneath the card image.
+                          </li>
+                          <li>
+                            <strong>Image link:</strong> Connect a clickable link (e.g., a specific collection such as
+                            <em>Rings</em>, a product page, or an external URL) to make the center card interactive.
+                            Supports dynamic source connections.
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <strong>Right column:</strong>
+                        <ul>
+                          <li>
+                            <strong>Right word:</strong> Enter the keyword or title text displayed on the right side
+                            (for example: <em>GRACE</em>). Supports dynamic source connections.
+                          </li>
+                          <li>
+                            <strong>Color:</strong> Choose a custom color for the right word text (for example:
+                            <em>#C77278</em>).
+                          </li>
+                          <li>
+                            <strong>Show right image:</strong> Toggle on to display a decorative image alongside the
+                            right word.
+                          </li>
+                          <li>
+                            <strong>Image position:</strong> Choose whether the right decorative image is positioned at
+                            the <strong>Top</strong> or <strong>Bottom</strong> relative to the word.
+                          </li>
+                          <li>
+                            <strong>Right decorative Image:</strong> Upload or select an accent product graphic or
+                            decorative image for the right side.
+                          </li>
+                          <li>
+                            <strong>Image width:</strong> Adjust the relative display width percentage of the right
+                            decorative image using the slider (for example: <em>70%</em>).
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="Faq">
+                <h3>FAQs</h3>
+
+                <div class="accordion-bottom">
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>Where can I find and add the Scrolling cards section?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        From your Shopify admin, go to <b>Online Store &gt; Themes</b> and click <b>Customize</b>. In
+                        the template sidebar, locate <b>Scrolling cards</b> or click <b>Add section &gt; Scrolling
+                          cards</b> to add it to your page template.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How do the left and right decorative images work?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        Each <b>Showcase item</b> block lets you optionally enable floating decorative accent images on
+                        the left and right sides. You can choose whether they sit at the <b>Top</b> or <b>Bottom</b> of
+                        the flanking text and set their individual display width percentage.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>Can I link the center card image to a specific collection or product?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        Yes. Under the <b>Center column</b> settings of each Showcase item block, use the <b>Image
+                          link</b> selector to link customers directly to relevant collections (e.g., <em>Rings</em>,
+                        <em>Necklaces</em>), product pages, or custom URLs.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How many Showcase items can I add to the Scrolling cards section?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        You can add multiple <b>Showcase item</b> blocks by clicking <b>Add Showcase item</b> in the
+                        left sidebar. Each added item creates a new distinct card slide that seamlessly appears as the
+                        visitor scrolls down the page.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

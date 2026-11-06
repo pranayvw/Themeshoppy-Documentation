@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Rare" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rare - Scrolling zoom</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="header-wrapper">
+    <header class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.themeshopy.com/" target="_blank"><img src="../images/themeshopy.png" alt="logo" /></a>
+        </div>
+        <div class="nav">
+          <ul class="user-nav-list">
+            <!-- <li><a href="../../home.html">Home</a></li> -->
+            <li>
+              <a href="https://help.shopify.com/en" target="_blank">Shopify Guide</a>
+            </li>
+            <li>
+              <a href="https://www.themeshopy.com/pages/contact" target="_blank">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+  </div>
+  <section class="container">
+    <div class="page-wrapper">
+      <div class="sidenavbar">
+        <span class="menu-close">
+          <i class="fa-solid fa-x"></i>
+        </span>
+        <a href="https://themes.shopify.com/designers/themeshopy-private-limited" target="_blank"
+          class="sidebar__header">
+          <span class="small-text">Themes</span>
+        </a>
+        <div class="side-bar-content">
+          <a href="../index.html" class="sidebar__current-theme">Rare</a>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Get Started</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/installationguide.html">Installation Guide</a>
+              <a href="../pages/update.html">How To Update Rare</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Header</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/header.html">Header section</a>
+              <a href="../pages/anouncement.html">Announcement Bar</a>
+              <a href="../pages/dropdown.html">Dropdown menu</a>
+              <a href="../pages/megamenu.html">Mega menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Footer</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/footer.html">Footer section</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Sections</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/slideshow.html">Slideshow hero</a>
+              <a href="../pages/collectionlist.html">Collection list</a>
+              <a href="../pages/scrollingZoom.html">Scrolling zoom</a>
+              <a href="../pages/fetauredTab.html">Featured tab</a>
+              <a href="../pages/builtPerfectSet.html">Build perfect set</a>
+              <a href="../pages/featuredproduct.html">Featured product</a>
+              <a href="../pages/scrollingCard.html">Scrolling cards</a>
+              <a href="../pages/testimonials.html">Testimonial</a>
+              <a href="../pages/shopTheLook.html">Shop the look</a>
+              <a href="../pages/promoBanner.html">Promo banner</a>
+              <a href="../pages/videoReview.html">Video reviews</a>
+              <a href="../pages/multicolumn.html">Multicolumns</a>
+              <a href="../pages/featuredBlog.html">Featured blog</a>
+              <a href="../pages/imagegallery.html">Image gallery</a>
+              <a href="../pages/imagewithtext.html">Image with text</a>
+              <a href="../pages/productRecommendation.html">Product recommendation</a>
+              <a href="../pages/scrollingShowcase.html">Scrolling showcase</a>
+              <a href="../pages/expandImageWithText.html">Expanding image with text</a>
+            </div>
+            <!--
+            <div class="accordion__body-inner">
+              <a href="../pages/scrolllist.html">Scroll list</a>
+              <a href="../pages/featuredcollection.html">Featured Collection</a>
+              <a href="../pages/countdowntimer.html">Countdown Timer</a>
+              <a href="../pages/collectionlistslider.html">Categories</a>
+              <a href="../pages/imagehotspot.html">Rich Text</a>
+              <a href="../pages/imagebanner.html">Video Background</a>
+              <a href="../pages/twocolumn.html">Gift Finder</a>
+              <a href="../pages/featuredproduct.html">Featured product</a>
+              <a href="../pages/testimonials.html">Testimonials</a>
+              <a href="../pages/infowithimage.html">Shop the look</a>
+              <a href="../pages/multicolumnimages.html">Scrolling card</a>
+              <a href="../pages/newsletter.html">Featured blog</a>
+              <a href="../pages/imagegallery.html">Image Gallery</a>
+              <a href="../pages/imagewithtext.html">Image with Text</a>
+              <a href="../pages/featurevideo.html">Video</a>
+              <a href="../pages/faq.html">Faq</a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Templates</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/productpage.html">Product</a>
+              <a href="../pages/collectionpage.html">Collection</a>
+              <a href="../pages/cart.html">Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Theme Settings</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/generalsetting.html">General Settings</a>
+              <a href="../pages/product-swatches.html">Product Swatches</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="main-content__wrapper">
+          <div class="main-content-text-wrapper">
+            <div class="about-main" id="about">
+              <div class="theme-colors">
+                <h2>Scrolling zoom</h2>
+
+                <p>
+                  The <b>Scrolling zoom</b> section delivers an immersive, interactive visual journey. As the user
+                  scrolls down the page, floating surrounding images zoom and disperse outward while a central focal
+                  point (image or looped video) and split headline (Left word / Right word) emerge into full view with a
+                  call-to-action button.
+                </p>
+
+                <img src="../images/scrolling-zoom-section-preview.gif" alt="Scrolling zoom Section Preview"
+                  class="wide-image" />
+
+                <h3>Scrolling zoom Section Settings</h3>
+
+                <p>
+                  Configure section-wide settings such as the color scheme, split title text (left and right words),
+                  center media (image or background video), call-to-action button, scroll length animation duration, and
+                  desktop/mobile spacing.
+                </p>
+
+                <img src="../images/scrolling-zoom-section-settings.png" alt="Scrolling zoom Section Settings"
+                  class="wide-image" />
+
+                <div class="info-block info-block--type-tip">
+                  <div class="info-block__title">
+                    <p class="step">
+                      <i class="fa-solid fa-circle-check"></i> Steps
+                    </p>
+                  </div>
+
+                  <ul>
+                    <li class="info-block__content">
+                      From your Shopify admin, go to <b>Online Store → Themes</b>.
+                    </li>
+                    <li class="info-block__content">
+                      Click <b>Customize</b> to open the Theme Editor.
+                    </li>
+                    <li class="info-block__content">
+                      In the <b>Template</b> sidebar, select <b>Scrolling zoom</b> (or click <b>Add section → Scrolling
+                        zoom</b>).
+                    </li>
+                    <li class="info-block__content">
+                      Choose a <b>Color scheme</b> and configure the split <b>Title</b> (Left word and Right word).
+                    </li>
+                    <li class="info-block__content">
+                      Upload the <b>Center image</b> or select a <b>Center video</b>.
+                    </li>
+                    <li class="info-block__content">
+                      Configure the <b>Button</b> settings (Button label, Button link, Button style, and Open link in
+                      new tab).
+                    </li>
+                    <li class="info-block__content">
+                      Adjust the <b>Scroll length</b> under Scroll behavior to control animation speed.
+                    </li>
+                    <li class="info-block__content">
+                      Configure <b>Desktop spacing</b> and <b>Mobile spacing</b> (Space above and Space below).
+                    </li>
+                    <li class="info-block__content">
+                      Click <b>Save</b> to apply your changes.
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>Color scheme:</strong> Select a predefined theme color scheme (e.g., <em>Scheme 1</em>,
+                    <em>Scheme 2</em>, etc.) to set the background and typography colors for the section. Click <em>Edit
+                      scheme</em> to customize the scheme's colors.
+                  </li>
+
+                  <li>
+                    <strong>Title:</strong>
+                    <ul>
+                      <li>
+                        <strong>Left word:</strong> Enter the first/left text portion of the section headline (for
+                        example: <em>TIMELESS</em>).
+                      </li>
+                      <li>
+                        <strong>Right word:</strong> Enter the second/right text portion of the section headline (for
+                        example: <em>SPARKLE</em>).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Center media:</strong>
+                    <ul>
+                      <li>
+                        <strong>Center image:</strong> Upload the primary focal image displayed in the center of the
+                        zoom animation.
+                      </li>
+                      <li>
+                        <strong>Center video:</strong> Upload or select an MP4 video file. When set, the video overrides
+                        the center image and plays automatically in a muted, infinite loop.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Button:</strong>
+                    <ul>
+                      <li>
+                        <strong>Button label:</strong> Enter the text for the call-to-action button (for example:
+                        <em>EXPLORE NOW</em>).
+                      </li>
+                      <li>
+                        <strong>Button link:</strong> Select or paste the URL destination for the button (for example: a
+                        featured product or collection).
+                      </li>
+                      <li>
+                        <strong>Open link in new tab:</strong> Toggle on to open the destination link in a new browser
+                        tab.
+                      </li>
+                      <li>
+                        <strong>Button style:</strong> Choose the design appearance for the button (e.g., <em>Link</em>,
+                        <em>Primary</em>, or <em>Secondary</em>).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Scroll behavior:</strong>
+                    <ul>
+                      <li>
+                        <strong>Scroll length:</strong> Adjust the slider to define the scroll duration in viewport
+                        height units (e.g., <em>250 vh</em>). This determines how much the user scrolls while the zoom
+                        animation plays (higher values produce a slower, more gradual zoom effect).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Desktop spacing:</strong>
+                    <ul>
+                      <li>
+                        <strong>Space above:</strong> Set the margin/spacing above the section on desktop screens (in
+                        pixels, e.g., <em>0 px</em>).
+                      </li>
+                      <li>
+                        <strong>Space below:</strong> Set the margin/spacing below the section on desktop screens (in
+                        pixels, e.g., <em>0 px</em>).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Mobile spacing:</strong>
+                    <ul>
+                      <li>
+                        <strong>Space above:</strong> Set the margin/spacing above the section on mobile devices (in
+                        pixels, e.g., <em>0 px</em>).
+                      </li>
+                      <li>
+                        <strong>Space below:</strong> Set the margin/spacing below the section on mobile devices (in
+                        pixels, e.g., <em>0 px</em>).
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <img src="../images/scrolling-zoom-image-block-settings.png" alt="Image Block Settings"
+                  class="wide-image" />
+
+                <h3>Image Block Settings</h3>
+
+                <p>
+                  You can add up to 8 <b>Image</b> blocks to the Scrolling zoom section. Each image block represents a
+                  floating ambient photo positioned across the canvas that disperses as the visitor scrolls.
+                </p>
+
+                <div class="info-block info-block--type-tip">
+                  <div class="info-block__title">
+                    <p class="step">
+                      <i class="fa-solid fa-circle-check"></i> Steps
+                    </p>
+                  </div>
+
+                  <ul>
+                    <li class="info-block__content">
+                      Under <b>Scrolling zoom</b> in the left sidebar, click <b>Add Image</b> or select an existing
+                      Image block.
+                    </li>
+                    <li class="info-block__content">
+                      Upload or select the <b>Image</b>.
+                    </li>
+                    <li class="info-block__content">
+                      Choose an <b>Image aspect ratio</b>.
+                    </li>
+                    <li class="info-block__content">
+                      Optionally attach a destination <b>Link</b> to make the image clickable.
+                    </li>
+                    <li class="info-block__content">
+                      Adjust the position coordinates (<b>Position from top</b> and <b>Position from left</b>) and
+                      <b>Width</b> percentage.
+                    </li>
+                    <li class="info-block__content">
+                      Click <b>Save</b> to apply your changes.
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>Image:</strong> Upload or select the photo to display as a floating ambient visual in the
+                    zoom canvas.
+                  </li>
+
+                  <li>
+                    <strong>Image aspect ratio:</strong> Select the aspect ratio for the image (e.g., <em>Adapt to
+                      image</em>, <em>Square</em>, <em>Portrait</em>, or <em>Landscape</em>).
+                  </li>
+
+                  <li>
+                    <strong>Link:</strong> Optional URL or page destination when clicking the image.
+                  </li>
+
+                  <li>
+                    <strong>Position from top:</strong> Adjust the vertical position of the image on the canvas as a
+                    percentage from the top edge (e.g., <em>65 %</em>).
+                  </li>
+
+                  <li>
+                    <strong>Position from left:</strong> Adjust the horizontal position of the image on the canvas as a
+                    percentage from the left edge (e.g., <em>58 %</em>).
+                  </li>
+
+                  <li>
+                    <strong>Width:</strong> Set the relative width scale of the image as a percentage of the section
+                    container (e.g., <em>24 %</em>).
+                  </li>
+                </ul>
+              </div>
+
+              <div class="Faq">
+                <h3>FAQs</h3>
+
+                <div class="accordion-bottom">
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>Where can I find the Scrolling zoom section?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        From your Shopify admin, go to <b>Online Store &gt; Themes</b> and click <b>Customize</b>. In
+                        the template sidebar, locate <b>Scrolling zoom</b> or click <b>Add section &gt; Scrolling
+                          zoom</b> to add it to your page.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How does the scroll zoom animation work?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        As visitors scroll down the page through this section, the floating surrounding images smoothly
+                        zoom and move outward towards the edges while the central image or video expands into clear
+                        focus with the headline and call-to-action button.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How do I control the speed of the scroll zoom animation?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        In the <b>Scrolling zoom</b> section settings under <b>Scroll behavior</b>, adjust the <b>Scroll
+                          length</b> slider (in <code>vh</code>). Higher values (e.g., 300vh) make the animation take
+                        longer to scroll through, resulting in a slower transition, while lower values make it faster.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>Can I use both an image and a video in the center?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        Yes. When you upload a <b>Center video</b>, it automatically plays in a muted, infinite loop and
+                        takes precedence over the center image. If no video is selected, the static <b>Center image</b>
+                        is displayed.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How many floating image blocks can I add?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        You can add up to <b>8 Image blocks</b> to the section. Each block can be custom positioned
+                        anywhere on the canvas using the <b>Position from top</b> and <b>Position from left</b>
+                        percentage sliders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Rare" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rare - Product recommendation</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="header-wrapper">
+    <header class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://www.themeshopy.com/" target="_blank"><img src="../images/themeshopy.png" alt="logo" /></a>
+        </div>
+        <div class="nav">
+          <ul class="user-nav-list">
+            <!-- <li><a href="../../home.html">Home</a></li> -->
+            <li>
+              <a href="https://help.shopify.com/en" target="_blank">Shopify Guide</a>
+            </li>
+            <li>
+              <a href="https://www.themeshopy.com/pages/contact" target="_blank">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+  </div>
+  <section class="container">
+    <div class="page-wrapper">
+      <div class="sidenavbar">
+        <span class="menu-close">
+          <i class="fa-solid fa-x"></i>
+        </span>
+        <a href="https://themes.shopify.com/designers/themeshopy-private-limited" target="_blank"
+          class="sidebar__header">
+          <span class="small-text">Themes</span>
+        </a>
+        <div class="side-bar-content">
+          <a href="../index.html" class="sidebar__current-theme">Rare</a>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Get Started</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/installationguide.html">Installation Guide</a>
+              <a href="../pages/update.html">How To Update Rare</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Header</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/header.html">Header section</a>
+              <a href="../pages/anouncement.html">Announcement Bar</a>
+              <a href="../pages/dropdown.html">Dropdown menu</a>
+              <a href="../pages/megamenu.html">Mega menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Footer</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/footer.html">Footer section</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Sections</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/slideshow.html">Slideshow hero</a>
+              <a href="../pages/collectionlist.html">Collection list</a>
+              <a href="../pages/scrollingZoom.html">Scrolling zoom</a>
+              <a href="../pages/fetauredTab.html">Featured tab</a>
+              <a href="../pages/builtPerfectSet.html">Build perfect set</a>
+              <a href="../pages/featuredproduct.html">Featured product</a>
+              <a href="../pages/scrollingCard.html">Scrolling cards</a>
+              <a href="../pages/testimonials.html">Testimonial</a>
+              <a href="../pages/shopTheLook.html">Shop the look</a>
+              <a href="../pages/promoBanner.html">Promo banner</a>
+              <a href="../pages/videoReview.html">Video reviews</a>
+              <a href="../pages/multicolumn.html">Multicolumns</a>
+              <a href="../pages/featuredBlog.html">Featured blog</a>
+              <a href="../pages/imagegallery.html">Image gallery</a>
+              <a href="../pages/imagewithtext.html">Image with text</a>
+              <a href="../pages/productRecommendation.html">Product recommendation</a>
+              <a href="../pages/scrollingShowcase.html">Scrolling showcase</a>
+              <a href="../pages/expandImageWithText.html">Expanding image with text</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Templates</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/productpage.html">Product</a>
+              <a href="../pages/collectionpage.html">Collection</a>
+              <a href="../pages/cart.html">Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="course-accordion">Theme Settings</button>
+          <div class="course-panel">
+            <div class="accordion__body-inner">
+              <a href="../pages/generalsetting.html">General Settings</a>
+              <a href="../pages/product-swatches.html">Product Swatches</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="main-content__wrapper">
+          <div class="main-content-text-wrapper">
+            <div class="about-main" id="about">
+              <div class="theme-colors">
+                <h2>Product recommendation</h2>
+
+                <p>
+                  The <b>Product recommendation</b> section delivers an interactive, guided <em>Piece Finder / Gift
+                    Finder</em> quiz experience directly on your storefront (such as <em>PIECE FINDER – Explore
+                    personalized jewelry recommendations</em>). It helps shoppers discover products tailored to their
+                  exact preferences by answering visual, multi-step questions (e.g., choosing metal type, jewelry style,
+                  or occasion) and receiving live, curated product recommendations.
+                </p>
+
+                <img src="../images/product-recoomendation-section-preview.png"
+                  alt="Product recommendation Section Preview" class="wide-image" />
+
+                <h3>How It Works</h3>
+
+                <p>
+                  The Product recommendation feature operates as a smart, two-column interactive experience that
+                  connects customer choices on the left with curated product recommendations on the right:
+                </p>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>1. Multi-Step Quiz (Left Side):</strong> Shoppers are presented with intuitive question
+                    cards (e.g., <em>01 WHICH METAL SPEAKS TO YOU?</em>). Each question contains up to 4 rich visual
+                    options featuring thumbnail photos, titles (<em>Gold</em>, <em>Silver</em>, <em>Rose Gold</em>,
+                    <em>Platinum</em>), and descriptive subtitles. Shoppers can click the arrow buttons (← / →) or slide
+                    indicators to move between questions.
+                  </li>
+
+                  <li>
+                    <strong>2. Real-Time Dynamic Matching (Right Side):</strong> When a shopper clicks any option card,
+                    the recommendation panel instantly updates without reloading the page. It highlights matching items
+                    under the customizable <em>Recommended for you</em> badge.
+                  </li>
+
+                  <li>
+                    <strong>3. Rich Product Details & Badges:</strong> Recommended product cards display high-resolution
+                    imagery, dynamic availability badges (such as <em>NEW | INSTOCK</em>, <em>SOLDOUT</em>, <em>POPULAR
+                      |
+                      9 LEFT</em>, or <em>LIMITED EDITION | 1 LEFT</em>), product titles, regular and sale pricing, and
+                    variant swatches.
+                  </li>
+
+                  <li>
+                    <strong>4. Smart Fallback Handling:</strong> If a customer's specific combination of answers does
+                    not yield an assigned product, the recommendation box automatically displays a friendly,
+                    customizable
+                    fallback message (<em>No products match your selection. Please choose the proper options to see
+                      recommendations.</em>).
+                  </li>
+                </ul>
+
+                <h3>Step-by-Step Setup Guide</h3>
+
+                <p>
+                  Follow these step-by-step instructions in your Shopify Theme Customizer to set up and configure the
+                  piece finder quiz:
+                </p>
+
+                <div class="info-block info-block--type-tip">
+                  <div class="info-block__title">
+                    <p class="step">
+                      <i class="fa-solid fa-circle-check"></i> Setup Steps
+                    </p>
+                  </div>
+
+                  <ul>
+                    <li class="info-block__content">
+                      <strong>Step 1: Open Theme Customizer</strong> — From your Shopify admin, go to <b>Online Store →
+                        Themes</b> and click <b>Customize</b>.
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 2: Add the Section</strong> — In the template sidebar, click <b>Add section</b> and
+                      select <b>Product recommendation</b>.
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 3: Configure Header & Description</strong> — In the section settings panel, select a
+                      <b>Color scheme</b>, enter the <b>Heading</b> (e.g., <em>PIECE FINDER</em>), set the <b>Font
+                        size</b>
+                      (e.g., <em>H5</em>), and enter the intro <b>Description</b> text.
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 4: Set Recommendation Labels</strong> — Under <b>Recommendations panel</b>, enter the
+                      badge title (e.g., <em>Recommended for you</em>) and define the fallback <b>No match message</b>.
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 5: Create Question Blocks</strong> — Click <b>+ Add Questions</b> under the section
+                      in
+                      the left sidebar (you can add up to 3 question steps).
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 6: Fill Question & Option Details</strong> — In each Question block, enter the
+                      <b>Question</b> headline (e.g., <em>WHICH METAL SPEAKS TO YOU?</em>) and configure the 4 answer
+                      options with <b>Option</b> title, <b>Option description</b>, and upload a thumbnail <b>Option
+                        image</b>.
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 7: Assign Products &amp; Mapping Rules</strong> — Under <b>Recommended products</b>,
+                      choose the <b>Product</b> to recommend and fill in the <b>Mapping</b> field with your answer
+                      combinations (e.g., <code>1+1+1, 3+1+2, 1+3+2</code>) where each number represents the selected
+                      option per question.
+                    </li>
+                    <li class="info-block__content">
+                      <strong>Step 8: Adjust Spacing & Save</strong> — Set your preferred <b>Desktop padding</b> and
+                      <b>Mobile padding</b> sliders and click <b>Save</b> to publish your quiz.
+                    </li>
+                  </ul>
+                </div>
+
+                <img src="../images/product-recommendation-section-settings.png"
+                  alt="Product recommendation Section Settings" class="wide-image" />
+
+                <h3>Product recommendation Section Settings</h3>
+
+                <p>
+                  The <strong>Product recommendation</strong> section settings panel gives you complete control over
+                  colors, header typography, the recommendation panel, product mapping combinations, carousel
+                  behavior, viewport spacing, and custom styling:
+                </p>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>Color scheme:</strong> Select a predefined theme color palette (e.g., <em>Scheme 1</em>,
+                    <em>Scheme 2</em>, etc.) to control background color, question card surfaces, typography, and
+                    accent borders. Click <em>Edit scheme</em> to customize colors directly.
+                  </li>
+
+                  <li>
+                    <strong>Heading:</strong> Enter the primary section headline displayed on the left side of the split
+                    header (for example: <em>PIECE FINDER</em>). Supports rich formatting (bold, italic, links) and
+                    dynamic source connections.
+                  </li>
+
+                  <li>
+                    <strong>Font size:</strong> Select the typography scale for the section heading (choose from
+                    <strong>H1</strong>, <strong>H2</strong>, <strong>H3</strong>, <strong>H4</strong>,
+                    <strong>H5</strong>, or <strong>H6</strong>; set to <em>H5</em> in the screenshot).
+                  </li>
+
+                  <li>
+                    <strong>Description:</strong> Enter supporting narrative copy displayed to the right of the red
+                    accent bar (for example: <em>Explore personalized jewelry recommendations curated to help you find
+                      your next favorite piece with confidence.</em>). Supports rich text formatting (bold, italic,
+                    links) and dynamic sources.
+                  </li>
+
+                  <li>
+                    <strong>Recommendations panel:</strong>
+                    <ul>
+                      <li>
+                        <strong>Recommendations label:</strong> Enter the badge title text displayed above the
+                        recommended product card (for example: <em>Recommended for you</em>).
+                      </li>
+                      <li>
+                        <strong>No match message:</strong> Enter fallback rich text displayed when a customer's
+                        selected combination has no assigned products (for example: <em>No products match your
+                          selection.
+                          Please choose the proper options to see recommendations.</em>).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Recommended products (Product Mapping):</strong>
+                    <p style="margin-top: 8px;">
+                      The theme includes a powerful mapping engine that allows you to link specific catalog products to
+                      unique quiz answer combinations chosen by your shoppers. Under each <strong>Select
+                        product</strong>
+                      entry, configure the following fields:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Product:</strong> Select the catalog product from your Shopify store (for example,
+                        <em>Rose Gold Overlapping Loop Ring</em>) that should be displayed in the recommendation panel
+                        when a shopper's quiz answers match.
+                      </li>
+                      <li>
+                        <strong>Mapping:</strong> Enter the combination formula string (e.g.,
+                        <code>1+1+1, 3+1+2, 1+3+2, 3+1+1</code>).
+                        <p style="margin-top: 6px; margin-bottom: 6px;">
+                          <strong>How the Mapping Syntax Works:</strong>
+                        </p>
+                        <ul>
+                          <li>
+                            Each number represents the <strong>selected option index</strong> (1, 2, 3, or 4) for
+                            each respective question, joined by a plus sign (<code>+</code>).
+                          </li>
+                          <li>
+                            <strong>Formula Structure:</strong>
+                            <code>[Question 1 Option] + [Question 2 Option] + [Question 3 Option]</code>
+                          </li>
+                          <li>
+                            <strong>Example:</strong> <code>1+2+3</code> means:
+                            <em>Question 1 → Option 1</em> (e.g., Gold),
+                            <em>Question 2 → Option 2</em> (e.g., Minimalist), and
+                            <em>Question 3 → Option 3</em> (e.g., Rings).
+                          </li>
+                          <li>
+                            <strong>Multiple Combinations (Comma Separated):</strong> You can assign multiple quiz paths
+                            to the same product by separating them with commas (for example:
+                            <code>1+1+1, 3+1+2, 1+3+2, 3+1+1, 3+2+1</code>). When a shopper selects <em>any</em> of
+                            these combination paths, the assigned product will immediately appear in the recommendation
+                            box.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Results layout:</strong>
+                    <ul>
+                      <li>
+                        <strong>Image ratio:</strong> Select the aspect ratio for recommended product images
+                        (<strong>Adapt to image</strong>, <strong>Square</strong>, <strong>Portrait</strong>, or
+                        <strong>Landscape</strong>).
+                      </li>
+                      <li>
+                        <strong>Show secondary image on hover:</strong> Toggle on to reveal the product's alternate
+                        hover image when a shopper hovers their cursor over the card.
+                      </li>
+                      <li>
+                        <strong>Show vendor:</strong> Toggle on to display the brand/vendor name above the product
+                        title.
+                      </li>
+                      <li>
+                        <strong>Enable quick view:</strong> Toggle on to display a quick view button that lets shoppers
+                        preview details and add items to cart directly from a modal popup.
+                      </li>
+                      <li>
+                        <strong>Show pagination dots:</strong> Toggle on to display navigation slide dots below the
+                        recommended products slider.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Desktop padding:</strong>
+                    <ul>
+                      <li>
+                        <strong>Padding top:</strong> Adjust top vertical spacing on desktop screens (in pixels, e.g.,
+                        <em>40 px</em>).
+                      </li>
+                      <li>
+                        <strong>Padding bottom:</strong> Adjust bottom vertical spacing on desktop screens (in pixels,
+                        e.g., <em>40 px</em>).
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Mobile padding:</strong>
+                    <ul>
+                      <li>
+                        <strong>Padding top:</strong> Adjust top vertical spacing on mobile screens (in pixels, e.g.,
+                        <em>30 px</em>).
+                      </li>
+                      <li>
+                        <strong>Padding bottom:</strong> Adjust bottom vertical spacing on mobile screens (in pixels,
+                        e.g., <em>30 px</em>).
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <img src="../images/product-recommendation-block-settings.png" alt="Questions Block Settings"
+                  class="wide-image" />
+
+                <h3>Questions Block Settings</h3>
+
+                <p>
+                  Each <strong>Questions</strong> block represents an individual step in the guided recommendation quiz.
+                  You can add up to 3 question blocks in total to tailor the customer journey.
+                </p>
+
+                <ul class="article-list list-unstyled">
+                  <li>
+                    <strong>Question:</strong> Enter the primary question title displayed at the top of the step (for
+                    example: <em>WHICH METAL SPEAKS TO YOU?</em>). Supports dynamic source connections.
+                  </li>
+
+                  <li>
+                    <strong>Options (Option 1 to 4):</strong> Each question supports up to four distinct answer options:
+                    <ul>
+                      <li>
+                        <strong>Option:</strong> Enter the choice name or title (for example: <em>Gold</em>,
+                        <em>Silver</em>, <em>Rose Gold</em>, or <em>Platinum</em>). Supports dynamic source connections.
+                      </li>
+                      <li>
+                        <strong>Option description:</strong> Enter supporting descriptive text explaining the material,
+                        style, or benefit (for example: <em>Timeless luxury with warmth, brilliance, and lasting
+                          elegance.</em>). Supports dynamic source connections.
+                      </li>
+                      <li>
+                        <strong>Option image:</strong> Upload a representative thumbnail image for the option tile
+                        (e.g.,
+                        <em>Rectangle_45230.png</em>).
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="Faq">
+                <h3>FAQs</h3>
+
+                <div class="accordion-bottom">
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>Where can I find and add the Product recommendation section?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        From your Shopify admin, go to <b>Online Store &gt; Themes</b> and click <b>Customize</b>. In
+                        the template sidebar, locate <b>Product recommendation</b> or click <b>Add section &gt; Product
+                          recommendation</b> to add the guided piece finder quiz to your homepage, product page, or
+                        custom landing pages.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How does the Mapping field work to recommend products?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        The <b>Mapping</b> field uses option indices formatted as <code>1+2+3</code>, where each number
+                        corresponds to the answer chosen for Question 1, Question 2, and Question 3. You can list
+                        multiple combination paths separated by commas (e.g., <code>1+1+1, 3+1+2, 1+3+2</code>) so that
+                        whenever a customer picks any of those combinations, the selected product is dynamically shown.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>How many question blocks and options can I create?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        You can add up to <b>3 Questions</b> blocks (e.g., Question 1: Metal, Question 2: Style,
+                        Question 3: Price/Occasion). Each question block supports up to <b>4 individual options</b> with
+                        custom titles, descriptions, and thumbnail photos.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h6>What is displayed if no products match a customer's selection?</h6>
+                    </div>
+
+                    <div class="accordion__content">
+                      <p>
+                        If no products match a specific combination, the section elegantly displays the customizable
+                        <b>No match message</b> (e.g., <em>No products match your selection. Please choose the proper
+                          options to see recommendations.</em>).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
