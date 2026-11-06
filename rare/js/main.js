@@ -1,98 +1,84 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', () => {
+  const progress = document.getElementById('progress');
+  const menuToggle = document.getElementById('menuToggle');
+  const sidebar = document.getElementById('sidebar');
+  const navSearch = document.getElementById('navSearch');
+  const railLinks = document.querySelectorAll('#railList a');
+  const sectionNodes = document.querySelectorAll('main section, main .hero');
+  const faqButtons = document.querySelectorAll('.faq-header');
 
-    const links = document.querySelectorAll(".accordion__body-inner a");
-    const currentPath = window.location.pathname;
+  function updateProgress() {
+    const root = document.documentElement;
+    const max = root.scrollHeight - root.clientHeight;
+    const value = max > 0 ? (root.scrollTop / max) * 100 : 0;
+    if (progress) progress.style.width = value + '%';
+  }
 
-    links.forEach(link => {
+  if (progress) {
+    updateProgress();
+    document.addEventListener('scroll', updateProgress, { passive: true });
+  }
 
-        // Ignore empty or # links
-        const href = link.getAttribute("href");
-        if (!href || href === "#") return;
+  if (menuToggle && sidebar) {
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  }
 
-        // Convert to full URL
-        const linkPath = new URL(link.href).pathname;
+  if (navSearch) {
+    navSearch.addEventListener('input', (event) => {
+      const query = event.target.value.trim().toLowerCase();
+      document.querySelectorAll('.nav-group').forEach((group) => {
+        let hasMatch = false;
+        group.querySelectorAll('.nav-links li').forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          const visible = !query || text.includes(query);
+          item.style.display = visible ? '' : 'none';
+          if (visible) hasMatch = true;
+        });
+        group.style.display = hasMatch ? '' : 'none';
+      });
+    });
+  }
 
-        // Match exact page OR if current page contains it
-        if (currentPath === linkPath || currentPath.includes(linkPath)) {
-            link.classList.add("active");
+  faqButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      const content = item ? item.querySelector('.faq-content') : null;
+      const isOpen = button.classList.contains('active');
 
-            // Optional: open its accordion automatically
-            const panel = link.closest(".course-panel");
-            if (panel) {
-                panel.style.display = "block";
-            }
-        }
+      faqButtons.forEach((header) => {
+        header.classList.remove('active');
+        const panel = header.closest('.faq-item')?.querySelector('.faq-content');
+        if (panel) panel.style.maxHeight = null;
+      });
 
+      if (!isOpen) {
+        button.classList.add('active');
+        if (content) content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
+
+  if (railLinks.length && sectionNodes.length) {
+    const map = {};
+    railLinks.forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        map[href.slice(1)] = link;
+      }
     });
 
-});
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        if (!map[id]) return;
+        railLinks.forEach((link) => link.classList.remove('active'));
+        map[id].classList.add('active');
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
 
-document.querySelectorAll('.accordion__header').forEach(header => {
-    header.addEventListener('click', function () {
-        const item = this.closest('.accordion__item');
-        const content = item.querySelector('.accordion__content');
-
-        // Close all other items (optional - remove if not needed)
-        document.querySelectorAll('.accordion__item').forEach(i => {
-            if (i !== item) {
-                i.querySelector('.accordion__header').classList.remove('active');
-                i.querySelector('.accordion__content').style.maxHeight = null;
-            }
-        });
-
-        // Toggle current item
-        this.classList.toggle('active');
-
-        if (this.classList.contains('active')) {
-            content.style.maxHeight = content.scrollHeight + "px";
-        } else {
-            content.style.maxHeight = null;
-        }
-    });
-});
-const menuBtn = document.querySelector(".menu");
-const closeBtn = document.querySelector(".menu-close");
-const sidebar = document.querySelector(".sidenavbar");
-
-menuBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("active");
-});
-
-closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("active");
-});
-
-// Initialize Swiper Banner Slider if elements exist
-document.addEventListener("DOMContentLoaded", function () {
-    if (document.querySelector('.category__scrolling-banner')) {
-        const bannerSwiper = new Swiper('.category__scrolling-banner', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            speed: 1500,
-            autoHeight: true,
-            pagination: {
-                el: '.scrolling-banner__controls .swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        // Explicitly stop autoplay on hover, resume on mouse leave
-        const swiperEl = document.querySelector('.category__scrolling-banner');
-        swiperEl.addEventListener('mouseenter', function () {
-            bannerSwiper.autoplay.stop();
-        });
-        swiperEl.addEventListener('mouseleave', function () {
-            bannerSwiper.autoplay.start();
-        });
-    }
+    sectionNodes.forEach((section) => observer.observe(section));
+  }
 });
