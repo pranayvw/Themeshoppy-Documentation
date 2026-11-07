@@ -5,394 +5,449 @@
   <meta charset="UTF-8" />
   <meta name="author" content="Rare" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rare - Image gallery</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Rare — Image gallery</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="../styles/style.css" />
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <div class="header-wrapper">
-    <header class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="https://www.themeshopy.com/" target="_blank"><img src="../images/themeshopy.png" alt="logo" /></a>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div id="progress"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M1 4h14M1 8h14M1 12h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+      <a class="brand_logo_link" href="https://www.themeshopy.com/" target="_blank"><img
+          src="../images/themeshopy-logo.svg" alt="Themeshopy" /></a>
+      <span class="brand-name">Rare</span>
+      <span class="brand-tag">Docs</span>
+    </div>
+    <nav class="top-links" aria-label="Main navigation">
+      <a href="../../home.html">Home</a>
+      <a href="https://help.shopify.com/en" target="_blank" rel="noopener">Shopify Guide</a>
+      <a href="https://www.themeshopy.com/pages/contact" target="_blank" rel="noopener">Support</a>
+      <a class="btn-demo" href="https://aspire-demo-2.myshopify.com/" target="_blank" rel="noopener">View Demo</a>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.3" />
+          <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+        </svg>
+        <input type="text" id="navSearch" placeholder="Search documentation" aria-label="Search documentation" />
+        <kbd>/</kbd>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Get Started</span>
         </div>
-        <div class="nav">
-          <ul class="user-nav-list">
-            <!-- <li><a href="../../home.html">Home</a></li> -->
+        <ul class="nav-links">
+          <li><a href="installationguide.html">Installation guide</a></li>
+          <li><a href="update.html">How to update Rare</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Header</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="header.html">Header section</a></li>
+          <li><a href="anouncement.html">Announcement bar</a></li>
+          <li><a href="dropdown.html">Dropdown menu</a></li>
+          <li><a href="megamenu.html">Mega menu</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Footer</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="footer.html">Footer section</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group active">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Sections</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="slideshow.html">Slideshow hero</a></li>
+          <li><a href="collectionlist.html">Collection list</a></li>
+          <li><a href="scrollingZoom.html">Scrolling zoom</a></li>
+          <li><a href="fetauredTab.html">Featured tab</a></li>
+          <li><a href="builtPerfectSet.html">Build perfect set</a></li>
+          <li><a href="featuredproduct.html">Featured product</a></li>
+          <li><a href="scrollingCard.html">Scrolling cards</a></li>
+          <li><a href="testimonials.html">Testimonial</a></li>
+          <li><a href="shopTheLook.html">Shop the look</a></li>
+          <li><a href="promoBanner.html">Promo banner</a></li>
+          <li><a href="videoReview.html">Video reviews</a></li>
+          <li><a href="multicolumn.html">Multicolumns</a></li>
+          <li><a href="featuredBlog.html">Featured blog</a></li>
+          <li><a href="imagegallery.html" class="current">Image gallery</a></li>
+          <li><a href="imagewithtext.html">Image with text</a></li>
+          <li><a href="productRecommendation.html">Product recommendation</a></li>
+          <li><a href="scrollingShowcase.html">Scrolling showcase</a></li>
+          <li><a href="expandImageWithText.html">Expanding image with text</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-thread"></div>
+        <div class="nav-cat">
+          <span class="node"></span><span>Templates</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="productpage.html">Product</a></li>
+          <li><a href="collectionpage.html">Collection</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-cat">
+          <span class="node"></span><span>Theme Settings</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="generalsetting.html">General settings</a></li>
+          <li><a href="product-swatches.html">Product swatches</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <div class="hero" id="overview">
+        <svg class="hero-plumb" width="46" height="120" viewBox="0 0 46 120" fill="none" aria-hidden="true">
+          <line x1="23" y1="0" x2="23" y2="86" stroke="#DFDACC" stroke-width="1" />
+          <circle cx="23" cy="98" r="12" stroke="#37503F" stroke-width="1.4" fill="#E4EBE3" />
+          <circle cx="23" cy="98" r="3" fill="#37503F" />
+        </svg>
+        <p class="eyebrow">Theme documentation</p>
+        <h1>Image gallery</h1>
+        <p class="lede">
+          The <b>Image gallery</b> section delivers a captivating visual carousel to showcase curated
+          photoshoots, brand lookbooks, community highlights, or Instagram feeds directly on your storefront
+          (such as <em>FOLLOW OUR SPARKLING JOURNEY</em>). Featuring smooth touch-friendly slider navigation,
+          configurable slides per view for desktop and mobile, aspect ratio controls, customizable corner radius,
+          and direct link attachments for every image slide, it drives visual engagement and connects customers
+          directly with your brand stories and social channels.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#configure">Configure image gallery</a>
+          <a class="btn btn-ghost" href="https://themes.shopify.com/themes/rare/presets/rare" target="_blank"
+            rel="noopener">Try the theme</a>
+        </div>
+      </div>
+
+      <img src="../images/image-gallery-preview.png" alt="Image gallery Section Preview" class="wide-image"
+        style="margin: 24px 0;" />
+
+      <section id="configure">
+        <div class="section-head">
+          <p class="eyebrow">Setup</p>
+          <h2>Image gallery Section Settings</h2>
+        </div>
+
+        <div class="article-block">
+          <p>
+            Configure section-wide settings including the header icon/badge image, slider layout controls (desktop
+            and mobile slide counts, slide gap spacing, image aspect ratio, corner radius, pagination dots, and
+            autoplay), as well as responsive desktop and mobile padding.
+          </p>
+          <img src="../images/image-gallery-section-settings.png" alt="Image gallery Section Settings"
+            class="wide-image" style="margin-top: 22px;" />
+        </div>
+
+        <div class="info-note article-block" style="margin-top: 18px;">
+          <div class="step-title">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Steps
+          </div>
+          <ul>
             <li>
-              <a href="https://help.shopify.com/en" target="_blank">Shopify Guide</a>
+              From your Shopify admin, go to <b>Online Store → Themes</b>.
             </li>
             <li>
-              <a href="https://www.themeshopy.com/pages/contact" target="_blank">Support</a>
+              Click <b>Customize</b> to open the Theme Editor.
+            </li>
+            <li>
+              In the template sidebar, select <b>Image gallery</b> (or click <b>Add section → Image gallery</b>).
+            </li>
+            <li>
+              Upload an optional <b>Image</b> (such as an Instagram icon SVG) to display above the section
+              heading.
+            </li>
+            <li>
+              Under <b>Slider layout</b>, set the number of <b>Slides on desktop</b> (e.g., <em>5</em>) and
+              <b>Slides on mobile</b> (e.g., <em>1.5</em>).
+            </li>
+            <li>
+              Adjust <b>Space between slides</b> (e.g., <em>16 px</em>), choose an <b>Image ratio</b> (e.g.,
+              <em>Portrait</em>), and adjust <b>Corner radius</b> (e.g., <em>0 px</em>).
+            </li>
+            <li>
+              Toggle <b>Show pagination dots</b> and <b>Enable autoplay</b> according to your preference.
+            </li>
+            <li>
+              Click <b>+ Add Image</b> in the sidebar to add image slides to the gallery.
+            </li>
+            <li>
+              For each image slide, upload the photo, add a destination <b>Link</b>, toggle <b>Open link in new
+                tab</b>, and optionally add a <b>Caption</b>.
+            </li>
+            <li>
+              Adjust <b>Desktop padding</b> and <b>Mobile padding</b> sliders and click <b>Save</b>.
             </li>
           </ul>
         </div>
-        <div class="menu"><i class="fa-solid fa-bars"></i></div>
-      </div>
-    </header>
+
+        <div class="article-block" style="margin-top: 18px;">
+          <ul>
+            <li>
+              <strong>Image:</strong> Upload or select an icon/graphic badge (such as an Instagram logo SVG
+              <code>fi_1384063.svg</code> or brand icon) displayed centered above the section title.
+            </li>
+
+            <li>
+              <strong>Slider layout:</strong>
+              <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 0;">
+                  <strong>Slides on desktop:</strong> Set the number of slides visible simultaneously in the
+                  carousel on desktop screens using the slider (e.g., <em>5</em>).
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Slides on mobile:</strong> Set the number of slides visible at once on mobile devices
+                  using the slider (e.g., <em>1.5</em> for a partial next-slide preview effect).
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Space between slides:</strong> Adjust the gap spacing between adjacent slides in pixels
+                  using the slider (e.g., <em>16 px</em>).
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Image ratio:</strong> Choose the display aspect ratio for gallery images
+                  (<strong>Portrait</strong>, <strong>Square</strong>, <strong>Landscape</strong>, or
+                  <strong>Adapt to image</strong>).
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Corner radius:</strong> Control the rounded corner curvature for gallery images in pixels
+                  using the slider (e.g., <em>0 px</em> for crisp edges or higher values for rounded cards).
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Show pagination dots:</strong> Toggle on to display clickable navigation dot indicators
+                  beneath the carousel slider.
+                </li>
+                <li>
+                  <strong>Enable autoplay:</strong> Toggle on to allow gallery slides to transition automatically in
+                  a continuous loop.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Desktop padding:</strong>
+              <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 0;">
+                  <strong>Padding top:</strong> Adjust top vertical spacing on desktop screens (in pixels, e.g.,
+                  <em>60 px</em>).
+                </li>
+                <li>
+                  <strong>Padding bottom:</strong> Adjust bottom vertical spacing on desktop screens (in pixels,
+                  e.g., <em>0 px</em>).
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Mobile padding:</strong>
+              <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 0;">
+                  <strong>Padding top:</strong> Adjust top vertical spacing on mobile screens (in pixels, e.g.,
+                  <em>40 px</em>).
+                </li>
+                <li>
+                  <strong>Padding bottom:</strong> Adjust bottom vertical spacing on mobile screens (in pixels,
+                  e.g., <em>40 px</em>).
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Custom CSS:</strong> Add custom CSS rules directly within the Theme Editor to further
+              fine-tune or override styling for this section.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="blocks">
+        
+
+        <div class="section-head">
+          <p class="eyebrow">Blocks</p>
+          <h2>Image Block Settings</h2>
+        </div>
+
+        <div class="article-block">
+          <img src="../images/image-gallery-bock-settings.png" alt="Image Block Settings" class="wide-image"
+          style="margin: 0 0 18px;" />
+          <ul>
+            <li>
+              <strong>Image:</strong> Each block represents an individual photo slide displayed within the gallery
+              carousel.
+
+              <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 0;">
+                  <strong>Image:</strong> Upload or select the high-resolution photograph to display in this gallery
+                  slide (e.g., <em>Rectangle_55.jpg</em>).
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Link:</strong> Select or enter a destination URL (e.g., an Instagram page
+                  <em>https://www.instagram.com/shopify</em>, product page, collection, or custom URL) so visitors
+                  are redirected upon clicking the slide. Supports dynamic source connections.
+                </li>
+                <li style="margin-bottom: 0;">
+                  <strong>Open link in new tab:</strong> Toggle on to open the linked URL in a separate browser tab,
+                  keeping your online store open in the customer's original tab.
+                </li>
+                <li>
+                  <strong>Caption:</strong> Enter optional text to display as a caption or label for the image slide.
+                  Supports dynamic source connections.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-head">
+          <p class="eyebrow">Questions</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-header active" type="button">
+              <h6>Where can I find and add the Image gallery section?</h6>
+            </button>
+            <div class="faq-content" style="max-height: 200px">
+              <div class="faq-content-inner">
+                <p>
+                  From your Shopify admin, go to <b>Online Store &gt; Themes</b> and click <b>Customize</b>. In
+                  the template sidebar, locate <b>Image gallery</b> or click <b>Add section &gt; Image gallery</b>
+                  to add it to your homepage or any other template.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <h6>How do I configure the number of slides visible on mobile and desktop?</h6>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>
+                  Under the section's <b>Slider layout</b> settings in the Theme Editor sidebar, use the <b>Slides on
+                    desktop</b> slider (e.g., set to 5) and <b>Slides on mobile</b> slider (e.g., set to 1.5).
+                  Setting 1.5 on mobile creates a modern partial-slide peek effect that signals to visitors that
+                  more images are available by swiping.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <h6>Can I link gallery images to external social media accounts or store products?</h6>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>
+                  Yes. Inside each <b>Image</b> block, use the <b>Link</b> selector to connect any external URL (such
+                  as your Instagram or TikTok profile) or internal store page (such as a specific product or
+                  collection).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <h6>How do I make the image links open in a new tab?</h6>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>
+                  Inside each <b>Image</b> block, enable the <b>Open link in new tab</b> toggle switch. This ensures
+                  shoppers visiting external social media profiles or external links do not navigate away from your
+                  storefront.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <h6>How do autoplay and pagination dots work in the Image gallery?</h6>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>
+                  Under <b>Slider layout</b>, you can toggle on <b>Show pagination dots</b> to display clickable dot
+                  indicators beneath the gallery, and toggle on <b>Enable autoplay</b> to have the gallery slides
+                  cycle automatically in an infinite loop.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Themeshopy — Rare theme documentation.</p>
+        <div class="footer-links">
+          <a href="../../home.html">All documentation</a>
+          <a href="https://help.shopify.com/en" target="_blank" rel="noopener">Shopify Guide</a>
+          <a href="https://www.themeshopy.com/pages/contact" target="_blank" rel="noopener">Support</a>
+        </div>
+      </footer>
+    </main>
+
+    <aside class="rail">
+      <p class="rail-title">On this page</p>
+      <ul id="railList">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#configure">Settings</a></li>
+        <li><a href="#blocks">Blocks</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </aside>
   </div>
-  <section class="container">
-    <div class="page-wrapper">
-      <div class="sidenavbar">
-        <span class="menu-close">
-          <i class="fa-solid fa-x"></i>
-        </span>
-        <a href="https://themes.shopify.com/designers/themeshopy-private-limited" target="_blank"
-          class="sidebar__header">
-          <span class="small-text">Themes</span>
-        </a>
-        <div class="side-bar-content">
-          <a href="../index.html" class="sidebar__current-theme">Rare</a>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Get Started</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/installationguide.html">Installation Guide</a>
-              <a href="../pages/update.html">How To Update Rare</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Header</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/header.html">Header section</a>
-              <a href="../pages/anouncement.html">Announcement Bar</a>
-              <a href="../pages/dropdown.html">Dropdown menu</a>
-              <a href="../pages/megamenu.html">Mega menu</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Footer</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/footer.html">Footer section</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Sections</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/slideshow.html">Slideshow hero</a>
-              <a href="../pages/collectionlist.html">Collection list</a>
-              <a href="../pages/scrollingZoom.html">Scrolling zoom</a>
-              <a href="../pages/fetauredTab.html">Featured tab</a>
-              <a href="../pages/builtPerfectSet.html">Build perfect set</a>
-              <a href="../pages/featuredproduct.html">Featured product</a>
-              <a href="../pages/scrollingCard.html">Scrolling cards</a>
-              <a href="../pages/testimonials.html">Testimonial</a>
-              <a href="../pages/shopTheLook.html">Shop the look</a>
-              <a href="../pages/promoBanner.html">Promo banner</a>
-              <a href="../pages/videoReview.html">Video reviews</a>
-              <a href="../pages/multicolumn.html">Multicolumns</a>
-              <a href="../pages/featuredBlog.html">Featured blog</a>
-              <a href="../pages/imagegallery.html">Image gallery</a>
-              <a href="../pages/imagewithtext.html">Image with text</a>
-              <a href="../pages/productRecommendation.html">Product recommendation</a>
-              <a href="../pages/scrollingShowcase.html">Scrolling showcase</a>
-              <a href="../pages/expandImageWithText.html">Expanding image with text</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Templates</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/productpage.html">Product</a>
-              <a href="../pages/collectionpage.html">Collection</a>
-              <a href="../pages/cart.html">Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="course-accordion">Theme Settings</button>
-          <div class="course-panel">
-            <div class="accordion__body-inner">
-              <a href="../pages/generalsetting.html">General Settings</a>
-              <a href="../pages/product-swatches.html">Product Swatches</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="main-content">
-        <div class="main-content__wrapper">
-          <div class="main-content-text-wrapper">
-            <div class="about-main" id="about">
-              <div class="theme-colors">
-                <h2>Image gallery</h2>
-
-                <p>
-                  The <b>Image gallery</b> section delivers a captivating visual carousel to showcase curated
-                  photoshoots, brand lookbooks, community highlights, or Instagram feeds directly on your storefront
-                  (such as <em>FOLLOW OUR SPARKLING JOURNEY</em>). Featuring smooth touch-friendly slider navigation,
-                  configurable slides per view for desktop and mobile, aspect ratio controls, customizable corner radius,
-                  and direct link attachments for every image slide, it drives visual engagement and connects customers
-                  directly with your brand stories and social channels.
-                </p>
-
-                <img src="../images/image-gallery-preview.png" alt="Image gallery Section Preview" class="wide-image" />
-
-                <h3>Image gallery Section Settings</h3>
-
-                <p>
-                  Configure section-wide settings including the header icon/badge image, slider layout controls (desktop
-                  and mobile slide counts, slide gap spacing, image aspect ratio, corner radius, pagination dots, and
-                  autoplay), as well as responsive desktop and mobile padding.
-                </p>
-
-                <img src="../images/image-gallery-section-settings.png" alt="Image gallery Section Settings"
-                  class="wide-image" />
-
-                <div class="info-block info-block--type-tip">
-                  <div class="info-block__title">
-                    <p class="step">
-                      <i class="fa-solid fa-circle-check"></i> Steps
-                    </p>
-                  </div>
-
-                  <ul>
-                    <li class="info-block__content">
-                      From your Shopify admin, go to <b>Online Store → Themes</b>.
-                    </li>
-                    <li class="info-block__content">
-                      Click <b>Customize</b> to open the Theme Editor.
-                    </li>
-                    <li class="info-block__content">
-                      In the template sidebar, select <b>Image gallery</b> (or click <b>Add section → Image gallery</b>).
-                    </li>
-                    <li class="info-block__content">
-                      Upload an optional <b>Image</b> (such as an Instagram icon SVG) to display above the section
-                      heading.
-                    </li>
-                    <li class="info-block__content">
-                      Under <b>Slider layout</b>, set the number of <b>Slides on desktop</b> (e.g., <em>5</em>) and
-                      <b>Slides on mobile</b> (e.g., <em>1.5</em>).
-                    </li>
-                    <li class="info-block__content">
-                      Adjust <b>Space between slides</b> (e.g., <em>16 px</em>), choose an <b>Image ratio</b> (e.g.,
-                      <em>Portrait</em>), and adjust <b>Corner radius</b> (e.g., <em>0 px</em>).
-                    </li>
-                    <li class="info-block__content">
-                      Toggle <b>Show pagination dots</b> and <b>Enable autoplay</b> according to your preference.
-                    </li>
-                    <li class="info-block__content">
-                      Click <b>+ Add Image</b> in the sidebar to add image slides to the gallery.
-                    </li>
-                    <li class="info-block__content">
-                      For each image slide, upload the photo, add a destination <b>Link</b>, toggle <b>Open link in new
-                        tab</b>, and optionally add a <b>Caption</b>.
-                    </li>
-                    <li class="info-block__content">
-                      Adjust <b>Desktop padding</b> and <b>Mobile padding</b> sliders and click <b>Save</b>.
-                    </li>
-                  </ul>
-                </div>
-
-                <ul class="article-list list-unstyled">
-                  <li>
-                    <strong>Image:</strong> Upload or select an icon/graphic badge (such as an Instagram logo SVG
-                    <code>fi_1384063.svg</code> or brand icon) displayed centered above the section title.
-                  </li>
-
-                  <li>
-                    <strong>Slider layout:</strong>
-                    <ul>
-                      <li>
-                        <strong>Slides on desktop:</strong> Set the number of slides visible simultaneously in the
-                        carousel on desktop screens using the slider (e.g., <em>5</em>).
-                      </li>
-                      <li>
-                        <strong>Slides on mobile:</strong> Set the number of slides visible at once on mobile devices
-                        using the slider (e.g., <em>1.5</em> for a partial next-slide preview effect).
-                      </li>
-                      <li>
-                        <strong>Space between slides:</strong> Adjust the gap spacing between adjacent slides in pixels
-                        using the slider (e.g., <em>16 px</em>).
-                      </li>
-                      <li>
-                        <strong>Image ratio:</strong> Choose the display aspect ratio for gallery images
-                        (<strong>Portrait</strong>, <strong>Square</strong>, <strong>Landscape</strong>, or
-                        <strong>Adapt to image</strong>).
-                      </li>
-                      <li>
-                        <strong>Corner radius:</strong> Control the rounded corner curvature for gallery images in pixels
-                        using the slider (e.g., <em>0 px</em> for crisp edges or higher values for rounded cards).
-                      </li>
-                      <li>
-                        <strong>Show pagination dots:</strong> Toggle on to display clickable navigation dot indicators
-                        beneath the carousel slider.
-                      </li>
-                      <li>
-                        <strong>Enable autoplay:</strong> Toggle on to allow gallery slides to transition automatically in
-                        a continuous loop.
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <strong>Desktop padding:</strong>
-                    <ul>
-                      <li>
-                        <strong>Padding top:</strong> Adjust top vertical spacing on desktop screens (in pixels, e.g.,
-                        <em>60 px</em>).
-                      </li>
-                      <li>
-                        <strong>Padding bottom:</strong> Adjust bottom vertical spacing on desktop screens (in pixels,
-                        e.g., <em>0 px</em>).
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <strong>Mobile padding:</strong>
-                    <ul>
-                      <li>
-                        <strong>Padding top:</strong> Adjust top vertical spacing on mobile screens (in pixels, e.g.,
-                        <em>40 px</em>).
-                      </li>
-                      <li>
-                        <strong>Padding bottom:</strong> Adjust bottom vertical spacing on mobile screens (in pixels,
-                        e.g., <em>40 px</em>).
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <strong>Custom CSS:</strong> Add custom CSS rules directly within the Theme Editor to further
-                    fine-tune or override styling for this section.
-                  </li>
-                </ul>
-
-                <img src="../images/image-gallery-bock-settings.png" alt="Image Block Settings" class="wide-image" />
-
-                <h3>Image Block Settings</h3>
-
-                <ul class="article-list list-unstyled">
-                  <li>
-                    <strong>Image:</strong> Each block represents an individual photo slide displayed within the gallery
-                    carousel.
-
-                    <ul>
-                      <li>
-                        <strong>Image:</strong> Upload or select the high-resolution photograph to display in this gallery
-                        slide (e.g., <em>Rectangle_55.jpg</em>).
-                      </li>
-                      <li>
-                        <strong>Link:</strong> Select or enter a destination URL (e.g., an Instagram page
-                        <em>https://www.instagram.com/shopify</em>, product page, collection, or custom URL) so visitors
-                        are redirected upon clicking the slide. Supports dynamic source connections.
-                      </li>
-                      <li>
-                        <strong>Open link in new tab:</strong> Toggle on to open the linked URL in a separate browser tab,
-                        keeping your online store open in the customer's original tab.
-                      </li>
-                      <li>
-                        <strong>Caption:</strong> Enter optional text to display as a caption or label for the image slide.
-                        Supports dynamic source connections.
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="Faq">
-                <h3>FAQs</h3>
-
-                <div class="accordion-bottom">
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>Where can I find and add the Image gallery section?</h6>
-                    </div>
-
-                    <div class="accordion__content">
-                      <p>
-                        From your Shopify admin, go to <b>Online Store &gt; Themes</b> and click <b>Customize</b>. In
-                        the template sidebar, locate <b>Image gallery</b> or click <b>Add section &gt; Image gallery</b>
-                        to add it to your homepage or any other template.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>How do I configure the number of slides visible on mobile and desktop?</h6>
-                    </div>
-
-                    <div class="accordion__content">
-                      <p>
-                        Under the section's <b>Slider layout</b> settings in the Theme Editor sidebar, use the <b>Slides on
-                          desktop</b> slider (e.g., set to 5) and <b>Slides on mobile</b> slider (e.g., set to 1.5).
-                        Setting 1.5 on mobile creates a modern partial-slide peek effect that signals to visitors that
-                        more images are available by swiping.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>Can I link gallery images to external social media accounts or store products?</h6>
-                    </div>
-
-                    <div class="accordion__content">
-                      <p>
-                        Yes. Inside each <b>Image</b> block, use the <b>Link</b> selector to connect any external URL (such
-                        as your Instagram or TikTok profile) or internal store page (such as a specific product or
-                        collection).
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>How do I make the image links open in a new tab?</h6>
-                    </div>
-
-                    <div class="accordion__content">
-                      <p>
-                        Inside each <b>Image</b> block, enable the <b>Open link in new tab</b> toggle switch. This ensures
-                        shoppers visiting external social media profiles or external links do not navigate away from your
-                        storefront.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="accordion__item">
-                    <div class="accordion__header">
-                      <h6>How do autoplay and pagination dots work in the Image gallery?</h6>
-                    </div>
-
-                    <div class="accordion__content">
-                      <p>
-                        Under <b>Slider layout</b>, you can toggle on <b>Show pagination dots</b> to display clickable dot
-                        indicators beneath the gallery, and toggle on <b>Enable autoplay</b> to have the gallery slides
-                        cycle automatically in an infinite loop.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <script src="../js/main.js"></script>
 </body>
 
