@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kombat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kombat — Hero banner tabs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div id="progress"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M1 4h14M1 8h14M1 12h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+            </button>
+            <a class="brand_logo_link" href="https://www.themeshopy.com/" target="_blank"><img
+                    src="../images/themeshopy-logo.svg" alt="Themeshopy" /></a>
+            <span class="brand-name">Kombat</span>
+            <span class="brand-tag">Docs</span>
+        </div>
+        <nav class="top-links" aria-label="Main navigation">
+            <a href="../../home.html">Home</a>
+            <a href="https://help.shopify.com/en" target="_blank" rel="noopener">Shopify Guide</a>
+            <a href="https://www.themeshopy.com/pages/contact" target="_blank" rel="noopener">Support</a>
+            <a class="btn-demo" href="https://kombat-demo-9us9edpk.myshopify.com/" target="_blank" rel="noopener">View
+                Demo</a>
+        </nav>
+    </header>
+
+    <div class="shell">
+        <aside class="sidebar" id="sidebar">
+            <div class="search-box">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.3" />
+                    <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+                <input type="text" id="navSearch" placeholder="Search documentation"
+                    aria-label="Search documentation" />
+                <kbd>/</kbd>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-thread"></div>
+                <div class="nav-cat">
+                    <span class="node"></span><span>Get Started</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="installationguide.html">Installation guide</a></li>
+                    <li><a href="update.html">How to update Kombat</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-thread"></div>
+                <div class="nav-cat">
+                    <span class="node"></span><span>Header</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="header.html">Header section</a></li>
+                    <li><a href="anouncement.html">Announcement bar</a></li>
+                    <!-- <li><a href="dropdown.html">Dropdown menu</a></li> -->
+                    <li><a href="megamenu-showcase.html">Mega menu showcase</a></li>
+                    <li><a href="megamenu-cards.html">Mega menu cards</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-thread"></div>
+                <div class="nav-cat">
+                    <span class="node"></span><span>Footer</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="footer.html">Footer section</a></li>
+                    <!-- Hidden until updated
+          <li><a href="og-multicolumnimages.html">Multicolumns section</a></li>
+          -->
+                </ul>
+            </div>
+
+            <div class="nav-group active">
+                <div class="nav-thread"></div>
+                <div class="nav-cat">
+                    <span class="node"></span><span>Sections</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="hero-banner-tabs.html" class="current">Hero banner tabs</a></li>
+                    <!-- <li><a href="slideshow.html">Slideshow hero</a></li> -->
+                    <li><a href="collectionlist.html">Collection list</a></li>
+                    <li><a href="collection-tab.html">Collection tab</a></li>
+                    <li><a href="build-the-box.html">Build the box</a></li>
+                    <!-- Hidden until updated
+          <li><a href="scrolllist.html">Scroll list</a></li>
+          <li><a href="featuredcollection.html">Featured collection</a></li>
+          <li><a href="countdowntimer.html">Countdown timer</a></li>
+          <li><a href="collectionlistslider.html">Categories</a></li>
+          <li><a href="collectionlist.html">Collection tab</a></li>
+          <li><a href="imagehotspot.html">Rich text</a></li>
+          <li><a href="imagebanner.html">Video background</a></li>
+          <li><a href="twocolumn.html">Gift finder</a></li>
+          <li><a href="featuredproduct.html">Featured product</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="infowithimage.html">Shop the look</a></li>
+          <li><a href="multicolumnimages.html">Scrolling card</a></li>
+          <li><a href="newsletter.html">Featured blog</a></li>
+          <li><a href="imagegallery.html">Image gallery</a></li>
+          <li><a href="imagewithtext.html">Image with text</a></li>
+          <li><a href="featurevideo.html">Video</a></li>
+          <li><a href="faq.html">Faq</a></li>
+          -->
+                </ul>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-thread"></div>
+                <div class="nav-cat">
+                    <span class="node"></span><span>Templates</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="productpage.html">Product</a></li>
+                    <li><a href="collectionpage.html">Collection</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-cat">
+                    <span class="node"></span><span>Theme Settings</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="generalsetting.html">General settings</a></li>
+                    <li><a href="product-swatches.html">Product swatches</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main id="main-content">
+            <div class="hero" id="overview">
+                <svg class="hero-plumb" width="46" height="120" viewBox="0 0 46 120" fill="none" aria-hidden="true">
+                    <line x1="23" y1="0" x2="23" y2="86" stroke="#DFDACC" stroke-width="1" />
+                    <circle cx="23" cy="98" r="12" stroke="#37503F" stroke-width="1.4" fill="#E4EBE3" />
+                    <circle cx="23" cy="98" r="3" fill="#37503F" />
+                </svg>
+                <p class="eyebrow">Theme documentation</p>
+                <h1>Hero banner tabs</h1>
+                <p class="lede">
+                    The <b>Hero banner tabs</b> section in the Kombat theme creates a full-screen hero banner made of
+                    slides.
+                    Each slide can combine a large image or video with a subheading, heading, description, badges, and
+                    buttons, while a row of tab cards below the banner lets visitors switch between slides.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#configure">Configure hero banner tabs</a>
+                    <a class="btn btn-ghost" href="https://themes.shopify.com/themes/kombat/presets/kombat"
+                        target="_blank" rel="noopener">Try the theme</a>
+                </div>
+            </div>
+
+            <img class="wide-image" src="../images/hero-banner-tabs-preview.png" alt="Hero banner tabs preview"
+                style="margin-bottom: 30px;" />
+
+            <section id="configure">
+                <div class="section-head">
+                    <p class="eyebrow">Setup</p>
+                    <h2>Steps to Set Up the Hero Banner Tabs in Kombat</h2>
+                </div>
+
+                <div class="article-block">
+                    <img class="wide-image" src="../images/hero-banner-tabs-section-settings.png"
+                        alt="Hero banner tabs settings" style="margin-top: 0;" />
+                </div>
+
+                <div class="info-note article-block">
+                    <h3>How to Configure the Hero Banner Tabs</h3>
+                    <div class="step-title">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 8.6l2.2 2.2 5.8-6" stroke="currentColor" stroke-width="1.4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Steps
+                    </div>
+                    <ul>
+                        <li>
+                            From your Shopify admin, go to <b>Online Store → Themes</b>.
+                        </li>
+                        <li>
+                            Click <b>Customize</b> on the <b>Kombat</b> theme.
+                        </li>
+                        <li>
+                            In the <b>Template</b> list, click <b>Add section</b> and select <b>Hero banner tabs</b>, or
+                            select
+                            the section if it is already on the page.
+                        </li>
+                        <li>
+                            Adjust the section settings according to your preferences.
+                        </li>
+                        <li>
+                            Click <b>Add Slide</b> to add a slide, then configure each slide.
+                        </li>
+                        <li>
+                            Click <b>Save</b> to apply your changes.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Hero Banner Tabs Section Settings</h3>
+                    <ul>
+                        <li>
+                            <strong>Section height:</strong> Choose the height of the section on desktop (for example,
+                            <em>Full screen</em>).
+                        </li>
+                        <li>
+                            <strong>Mobile section height:</strong> Choose the height of the section on mobile devices
+                            (for
+                            example, <em>Medium</em>).
+                        </li>
+                        <li>
+                            <strong>Tab card corner radius:</strong> Adjust the corner radius of the tab cards using the
+                            slider
+                            (for example, 14px).
+                        </li>
+                        <li>
+                            <strong>Subheading text gradient:</strong> Choose the gradient style applied to the
+                            subheading text
+                            (for example, <em>Linear gradient</em>).
+                        </li>
+                        <li>
+                            <strong>Change slide on tab hover:</strong> Turn this option on to switch to a slide when a
+                            visitor
+                            hovers over its tab.
+                        </li>
+                        <li>
+                            <strong>Slide reveal style:</strong> Choose the animation used when a slide is revealed (for
+                            example,
+                            <em>Neon blade sweep</em>).
+                        </li>
+                        <li>
+                            <strong>Edge shadows:</strong> Softly blend the top and bottom edges into the sections
+                            around this one.
+                            Pick the color scheme used by the section above or below.
+                            <ul style="margin-top: 8px;">
+                                <li style="margin-bottom: 0;"><strong>Show top shadow:</strong> Turn this option on to
+                                    display a
+                                    shadow along the top edge.</li>
+                                <li style="margin-bottom: 0;"><strong>Top shadow color scheme:</strong> Select the color
+                                    scheme for the
+                                    top shadow.</li>
+                                <li style="margin-bottom: 0;"><strong>Top shadow height:</strong> Adjust the height of
+                                    the top shadow
+                                    (for example, 180px).</li>
+                                <li style="margin-bottom: 0;"><strong>Show bottom shadow:</strong> Turn this option on
+                                    to display a
+                                    shadow along the bottom edge.</li>
+                                <li style="margin-bottom: 0;"><strong>Bottom shadow color scheme:</strong> Select the
+                                    color scheme for
+                                    the bottom shadow.</li>
+                                <li><strong>Bottom shadow height:</strong> Adjust the height of the bottom shadow (for
+                                    example,
+                                    120px).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="slide">
+                <div class="section-head">
+                    <p class="eyebrow">Blocks</p>
+                    <h2>Slide Block Settings</h2>
+                </div>
+
+                <div class="article-block">
+                    <img class="wide-image" src="../images/hero-banner-tabs-slide-settings.png"
+                        alt="Hero banner tabs slide settings" style="margin-top: 0;" />
+                    <p>
+                        Each <strong>Slide</strong> block is one slide of the banner. Add as many slides as you need
+                        with
+                        <strong>Add Slide</strong>.
+                    </p>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Color Scheme and Media</h3>
+                    <ul>
+                        <li><strong>Color scheme:</strong> Choose a color scheme for the slide. Use <em>Edit scheme</em>
+                            to
+                            customize the selected scheme.</li>
+                        <li><strong>Image:</strong> Select or upload the main image for the slide.</li>
+                        <li><strong>Mobile image:</strong> Select or upload a separate image to use on mobile devices.
+                        </li>
+                        <li><strong>Video:</strong> Select a video to use in the slide.</li>
+                        <li><strong>Thumbnail image:</strong> Select or upload the image shown on the slide’s tab card.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Layout and Side Shadow</h3>
+                    <ul>
+                        <li><strong>Content alignment:</strong> Align the slide content to the <em>Left</em>,
+                            <em>Center</em>, or
+                            <em>Right</em>.
+                        </li>
+                        <li><strong>Content max width:</strong> Set the maximum width of the content area using the
+                            slider (for
+                            example, 440px).</li>
+                        <li><strong>Show side shadow:</strong> Darkens one side of the image so the text stays easy to
+                            read.
+                            <ul style="margin-top: 8px;">
+                                <li style="margin-bottom: 0;"><strong>Shadow position:</strong> Choose whether the
+                                    shadow appears on the
+                                    <em>Left</em> or <em>Right</em>.
+                                </li>
+                                <li style="margin-bottom: 0;"><strong>Shadow strength:</strong> Adjust how dark the
+                                    shadow is (for
+                                    example, 90%).</li>
+                                <li><strong>Shadow width:</strong> Adjust how far the shadow spreads across the image
+                                    (for example,
+                                    75%).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Text and Heading</h3>
+                    <ul>
+                        <li><strong>Subheading:</strong> Enter the short line shown above the heading (for example,
+                            <em>Featured Release</em>).
+                        </li>
+                        <li><strong>Show line after subheading:</strong> Turn this option on to display a line after the
+                            subheading.</li>
+                        <li><strong>Heading line:</strong> Each heading line starts on a new line. Add a heading line
+                            for every
+                            line you want in the heading (for example, <em>sunset</em>, <em>syndicate</em>, <em>auto
+                                VI</em>). The
+                            text editor supports bold, italic, and links.</li>
+                        <li><strong>Font size:</strong> Choose the size of the heading (for example, <em>Extra
+                                large</em>).</li>
+                        <li><strong>Highlight italic words:</strong> Select the words to highlight in the heading and
+                            press the
+                            italic (I) button. Those words are shown upright with the theme’s gradient.</li>
+                    </ul>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Content and Badges</h3>
+                    <ul>
+                        <li><strong>Small heading:</strong> Enter a short heading shown below the main heading (for
+                            example,
+                            <em>Enter GTA VI Chaos</em>).
+                        </li>
+                        <li><strong>Hero description:</strong> Add the description for the slide. The text editor
+                            supports bold,
+                            italic, links, and bulleted or numbered lists.</li>
+                        <li><strong>Badges:</strong> Each slide has three badges. The badge shows when it has text.
+                            <ul style="margin-top: 8px;">
+                                <li style="margin-bottom: 0;"><strong>Badge icon:</strong> Select or upload an icon to
+                                    display beside the
+                                    badge text.</li>
+                                <li><strong>Badge text:</strong> Enter the text for the badge (for example, <em>19 Nov
+                                        2026</em>,
+                                    <em>Playstation</em>, or <em>Xbox Series X/S</em>).
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Buttons</h3>
+                    <p>Each slide can show two buttons, and both have the same settings.</p>
+                    <ul>
+                        <li><strong>Button label:</strong> Enter the text shown on the button (for example,
+                            <em>Pre Order Now</em> or <em>Explore More Games</em>).
+                        </li>
+                        <li><strong>Button link:</strong> Select the page, product, or collection that the button opens.
+                        </li>
+                        <li><strong>Open in new tab:</strong> Turn this option on to open the button link in a new
+                            browser tab.
+                        </li>
+                        <li><strong>Button style:</strong> Choose the button style, such as <em>Gradient</em> or
+                            <em>Secondary</em>.
+                        </li>
+                        <li><strong>Show cart icon:</strong> Turn this option on to show a cart icon on the button.</li>
+                        <li><strong>Show arrow icon:</strong> Turn this option on to show an arrow icon on the button.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-block" style="margin-top: 18px;">
+                    <h3>Tab</h3>
+                    <ul>
+                        <li><strong>Tab heading:</strong> Enter the heading shown on the slide’s tab card (for example,
+                            <em>Enter GTA VI Chaos</em>).
+                        </li>
+                        <li><strong>Tab description:</strong> Enter a short description for the tab card. Keep it short
+                            for the
+                            best result.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="faq">
+                <div class="section-head">
+                    <p class="eyebrow">Questions</p>
+                    <h2>Frequently asked questions</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-header active" type="button">
+                            <h6>How do I add more slides to the hero banner?</h6>
+                        </button>
+                        <div class="faq-content" style="max-height: 200px;">
+                            <div class="faq-content-inner">
+                                <p>
+                                    Select the <b>Hero banner tabs</b> section in the Theme Editor and click <b>Add
+                                        Slide</b>. Each slide has its own image, text, badges, buttons, and tab card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header" type="button">
+                            <h6>How do I highlight words in the heading?</h6>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>
+                                    Turn on <b>Highlight italic words</b>, select the words in a heading line, and press
+                                    the italic (<b>I</b>) button. Those words are shown upright with the theme’s
+                                    gradient.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header" type="button">
+                            <h6>Why is a badge not showing on my slide?</h6>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>
+                                    A badge only shows when it has text. Enter the <b>Badge text</b> for that badge, and
+                                    select a <b>Badge icon</b> if you want an icon beside it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header" type="button">
+                            <h6>How do I make the banner change when someone hovers over a tab?</h6>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>
+                                    Turn on <b>Change slide on tab hover</b> in the Hero banner tabs section settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2026 Themeshopy — Kombat theme documentation.</p>
+                <div class="footer-links">
+                    <a href="../../home.html">All documentation</a>
+                    <a href="https://help.shopify.com/en" target="_blank" rel="noopener">Shopify Guide</a>
+                    <a href="https://www.themeshopy.com/pages/contact" target="_blank" rel="noopener">Support</a>
+                </div>
+            </footer>
+        </main>
+
+        <aside class="rail">
+            <p class="rail-title">On this page</p>
+            <ul id="railList">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#configure">Configuration</a></li>
+                <li><a href="#slide">Slide settings</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
